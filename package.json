@@ -1,6 +1,6 @@
 {
     "name": "ml-distance",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Distance functions (metrics) to compare vectors",
     "main": "src/index.js",
     "directories": {
@@ -8,7 +8,7 @@
         "test": "test"
     },
     "scripts": {
-        "test": "mocha --require should-approximately-deep --reporter mocha-better-spec-reporter --recursive"
+        "test": "./node_modules/.bin/mocha --require should-approximately-deep --reporter mocha-better-spec-reporter --recursive"
     },
     "repository": "mljs/distance",
     "keywords": [
