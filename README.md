@@ -20,8 +20,8 @@ Returns the [squared euclidean distance](http://en.wikipedia.org/wiki/Euclidean_
 
 ## Contributing
 
-A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file.
-The metric should be then added in the exports of src/index.js with a relatively small but understandable name (use camelCase).
+A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file in test/dist.  
+The metric should be then added in the exports of src/index.js with a relatively small but understandable name (use camelCase).  
 It should also be added to this README with either a link to the formula or an inline description.
 
 ## Test
