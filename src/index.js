@@ -1,5 +1,2 @@
-
-var euclidean = require('./dist/euclidean');
-
-exports.euclidean = euclidean.euclidean;
-exports.squaredEuclidean = euclidean.squaredEuclidean;
+exports.euclidean = require('./dist/euclidean');
+exports.squaredEuclidean = require('./dist/squared-euclidean');

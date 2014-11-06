@@ -8,11 +8,9 @@ describe('Euclidean distance', function () {
 
     it('should return 0 with itself', function () {
         distance.euclidean(v1, v1).should.equal(0);
-        distance.squaredEuclidean(v1, v1).should.equal(0);
     });
 
     it('should be correct', function () {
-        distance.squaredEuclidean(v1, v2).should.equal(64);
         distance.euclidean(v1, v2).should.equal(8);
         distance.euclidean(v1, v3).should.equal(Math.sqrt(distance.squaredEuclidean(v1, v3)));
     });
