@@ -1,0 +1,35 @@
+{
+    "name": "ml-distance",
+    "version": "0.0.1",
+    "description": "Distance functions (metrics) to compare vectors",
+    "main": "src/index.js",
+    "directories": {
+        "lib": "src",
+        "test": "test"
+    },
+    "scripts": {
+        "test": "mocha --require should-approximately-deep --reporter mocha-better-spec-reporter --recursive"
+    },
+    "repository": "mljs/distance",
+    "keywords": [
+        "distance",
+        "metric",
+        "vector",
+        "data",
+        "mining",
+        "datamining",
+        "machine",
+        "learning"
+    ],
+    "author": "Michaël Zasso",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/mljs/distance/issues"
+    },
+    "homepage": "https://github.com/mljs/distance",
+    "devDependencies": {
+        "mocha-better-spec-reporter": "latest",
+        "mocha": "latest",
+        "should": "latest"
+    }
+}
