@@ -18,6 +18,11 @@ Returns the [euclidean distance](http://en.wikipedia.org/wiki/Euclidean_distance
 
 Returns the [squared euclidean distance](http://en.wikipedia.org/wiki/Euclidean_distance#Squared_Euclidean_distance) between vectors p and q
 
+### manhattan(p, q)
+
+Returns the [city block distance](http://en.wikipedia.org/wiki/Taxicab_geometry) between vectors p and q
+
+
 ## Contributing
 
 A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file in test/dist.  
