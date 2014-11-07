@@ -22,6 +22,9 @@ Returns the [squared euclidean distance](http://en.wikipedia.org/wiki/Euclidean_
 
 Returns the [city block distance](http://en.wikipedia.org/wiki/Taxicab_geometry) between vectors p and q
 
+### minkowski(p, q, d)
+
+Returns the [Minkowski](http://en.wikipedia.org/wiki/Minkowski_distance) between vectors p and q for order d
 
 ## Contributing
 
