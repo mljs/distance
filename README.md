@@ -24,7 +24,11 @@ Returns the [city block distance](http://en.wikipedia.org/wiki/Taxicab_geometry)
 
 ### minkowski(p, q, d)
 
-Returns the [Minkowski](http://en.wikipedia.org/wiki/Minkowski_distance) between vectors p and q for order d
+Returns the [Minkowski distance](http://en.wikipedia.org/wiki/Minkowski_distance) between vectors p and q for order d
+
+### chebyshev(p, q)
+
+Returns the [Chebyshev distance](http://en.wikipedia.org/wiki/Chebyshev_distance) between vectors p and q
 
 ## Contributing
 
