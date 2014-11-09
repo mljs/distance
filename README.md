@@ -36,7 +36,11 @@ Returns the [Sørensen distance](http://en.wikipedia.org/wiki/S%C3%B8rensen%E2%8
 
 ### gower(p, q)
 
-Returns the [Gower distance](http://en.wikipedia.org/wiki/Chebyshev_distance) between vectors p and q
+Returns the [Gower distance](https://stat.ethz.ch/education/semesters/ss2012/ams/slides/v4.2.pdf) between vectors p and q
+
+### soergel(p, q)
+
+Returns the [Soergel distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
 ## Contributing
 
