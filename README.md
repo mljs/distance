@@ -34,6 +34,10 @@ Returns the [Chebyshev distance](http://en.wikipedia.org/wiki/Chebyshev_distance
 
 Returns the [Sørensen distance](http://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient) between vectors p and q
 
+### gower(p, q)
+
+Returns the [Gower distance](http://en.wikipedia.org/wiki/Chebyshev_distance) between vectors p and q
+
 ## Contributing
 
 A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file in test/dist.  
