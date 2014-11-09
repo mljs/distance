@@ -46,6 +46,10 @@ Returns the [Soergel distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf
 
 Returns the [Kulczynski distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+### canberra(p, q)
+
+Returns the [Canberra distance](http://en.wikipedia.org/wiki/Canberra_distance) between vectors p and q
+
 ## Contributing
 
 A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file in test/dist.  

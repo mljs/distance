@@ -7,3 +7,4 @@ exports.sorensen = require('./dist/sorensen');
 exports.gower = require('./dist/gower');
 exports.soergel = require('./dist/soergel');
 exports.kulczynski = require('./dist/kulczynski');
+exports.canberra = require('./dist/canberra');
