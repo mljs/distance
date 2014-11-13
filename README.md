@@ -58,6 +58,10 @@ Returns the [Lorentzian distance](https://stat.ethz.ch/education/semesters/ss201
 
 Returns the [Intersection distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+### intersectionS(p, q)
+
+Returns the [Intersection similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
 ### waveHedges(p, q)
 
 Returns the [Wave Hedges distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
@@ -66,9 +70,17 @@ Returns the [Wave Hedges distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49
 
 Returns the [Czekanowski distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+### czekanowskiS(p, q)
+
+Returns the [Czekanowski similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
 ### motyka(p, q)
 
 Returns the [Motyka distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
+### motykaS(p, q)
+
+Returns the [Motyka similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
 ### kulczynskiS(p, q)
 
