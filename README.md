@@ -54,6 +54,10 @@ Returns the [Canberra distance](http://en.wikipedia.org/wiki/Canberra_distance) 
 
 Returns the [Lorentzian distance](https://stat.ethz.ch/education/semesters/ss2012/ams/slides/v4.2.pdf) between vectors p and q
 
+### intersection(p, q)
+
+Returns the [Intersection distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
 ## Contributing
 
 A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file in test/dist.  
