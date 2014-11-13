@@ -14,3 +14,4 @@ exports.waveHedges = require('./dist/waveHedges');
 exports.czekanowski = require('./dist/czekanowski');
 exports.motyka = require('./dist/motyka');
 exports.kulczynskiS = require('./dist/kulczynskiS');
+exports.ruzicka = require('./dist/ruzicka');
