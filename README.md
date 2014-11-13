@@ -58,6 +58,10 @@ Returns the [Lorentzian distance](https://stat.ethz.ch/education/semesters/ss201
 
 Returns the [Intersection distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+### waveHedges(p, q)
+
+Returns the [Wave Hedges](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
 ## Contributing
 
 A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file in test/dist.  
