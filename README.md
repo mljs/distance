@@ -60,15 +60,19 @@ Returns the [Intersection distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-4
 
 ### waveHedges(p, q)
 
-Returns the [Wave Hedges](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+Returns the [Wave Hedges distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
 ### czekanowski(p, q)
 
-Returns the [Czekanowski](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+Returns the [Czekanowski distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
 ### motyka(p, q)
 
-Returns the [Motyka](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+Returns the [Motyka distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
+### kulczynskiS(p, q)
+
+Returns the [Kulczynski similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
 ## Contributing
 
