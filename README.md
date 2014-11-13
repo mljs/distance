@@ -94,6 +94,10 @@ Returns the [Ruzicka similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.p
 
 Returns the [Tanimoto distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+### innerProduct(p, q)
+
+Returns the [Inner Product similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
 ## Contributing
 
 A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file in test/dist.  
