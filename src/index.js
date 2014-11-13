@@ -12,3 +12,4 @@ exports.lorentzian = require('./dist/lorentzian');
 exports.intersection = require('./dist/intersection');
 exports.waveHedges = require('./dist/waveHedges');
 exports.czekanowski = require('./dist/czekanowski');
+exports.motyka = require('./dist/motyka');
