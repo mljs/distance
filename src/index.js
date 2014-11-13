@@ -15,3 +15,4 @@ exports.czekanowski = require('./dist/czekanowski');
 exports.motyka = require('./dist/motyka');
 exports.kulczynskiS = require('./dist/kulczynskiS');
 exports.ruzicka = require('./dist/ruzicka');
+exports.tanimoto = require('./dist/tanimoto');
