@@ -20,3 +20,4 @@ exports.kulczynskiS = require('./dist/kulczynskiS');
 exports.ruzicka = require('./dist/ruzicka');
 exports.tanimoto = require('./dist/tanimoto');
 exports.innerProduct = require('./dist/innerProduct');
+exports.harmonicMean = require('./dist/harmonicMean');
