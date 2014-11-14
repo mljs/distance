@@ -22,3 +22,4 @@ exports.tanimoto = require('./dist/tanimoto');
 exports.innerProduct = require('./dist/innerProduct');
 exports.harmonicMean = require('./dist/harmonicMean');
 exports.cosine = require('./dist/cosine');
+exports.kumarHassebrook = require('./dist/kumarHassebrook');
