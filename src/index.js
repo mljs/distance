@@ -23,3 +23,5 @@ exports.innerProduct = require('./dist/innerProduct');
 exports.harmonicMean = require('./dist/harmonicMean');
 exports.cosine = require('./dist/cosine');
 exports.kumarHassebrook = require('./dist/kumarHassebrook');
+exports.jaccard = require('./dist/jaccard');
+exports.jaccardS = require('./dist/jaccardS');

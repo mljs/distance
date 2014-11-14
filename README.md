@@ -110,6 +110,14 @@ Returns the [Cosine similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pd
 
 Returns the [Kumar-Hassebrook  similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+### jaccard(p, q)
+
+Returns the [Jaccard  distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
+### jaccardS(p, q)
+
+Returns the [Jaccard  similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
 ## Contributing
 
 A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file in test/dist.  
