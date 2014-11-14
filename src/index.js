@@ -25,3 +25,5 @@ exports.cosine = require('./dist/cosine');
 exports.kumarHassebrook = require('./dist/kumarHassebrook');
 exports.jaccard = require('./dist/jaccard');
 exports.jaccardS = require('./dist/jaccardS');
+exports.dice = require('./dist/dice');
+exports.diceS = require('./dist/diceS');

@@ -118,6 +118,14 @@ Returns the [Jaccard  distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pd
 
 Returns the [Jaccard  similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+### dice(p, q)
+
+Returns the [Dice  distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
+### diceS(p, q)
+
+Returns the [Dice  similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
 ## Contributing
 
 A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file in test/dist.  
