@@ -102,6 +102,10 @@ Returns the [Inner Product similarity](http://www.naun.org/main/NAUN/ijmmas/mmma
 
 Returns the [Harmonic mean similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+### cosine(p, q)
+
+Returns the [Cosine similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
 ## Contributing
 
 A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file in test/dist.  
