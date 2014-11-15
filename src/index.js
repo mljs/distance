@@ -35,3 +35,4 @@ exports.squaredChord = require('./dist/squaredChord');
 exports.squaredChordS = require('./dist/squaredChordS');
 exports.pearson = require('./dist/pearson');
 exports.neyman = require('./dist/neyman');
+exports.squared = require('./dist/squared');
