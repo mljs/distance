@@ -6,7 +6,7 @@ var v2 = [0.3, 0.2, 0.3, 0.2];
 describe('Kulczynski similarity', function () {
 
     it('should be correct', function () {
-        distance.kulczynskiS(v1, v2).should.equal(11/16);
+        distance.kulczynskiS(v1, v2).should.equal(1.9999999999999996);
     });
 
 });

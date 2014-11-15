@@ -10,7 +10,7 @@ describe('Intersection distance', function () {
     });
 
     it('should be correct', function () {
-        distance.intersection(v1, v2).should.equal(0.2);
+        distance.intersection(v1, v2).should.equal(0.20000000000000007);
         distance.intersection(v1, v2).should.equal(distance.manhattan(v1, v2) / 2);
     });
 

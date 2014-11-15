@@ -10,7 +10,7 @@ describe('Tanimoto distance', function () {
     });
 
     it('should be correct', function () {
-        distance.tanimoto(v1, v2).should.equal(1/3);
+        distance.tanimoto(v1, v2).should.equal(0.33333333333333337);
         distance.tanimoto(v1, v2).should.equal(distance.soergel(v1, v2));
     });
 

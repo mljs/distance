@@ -28,3 +28,4 @@ exports.jaccardS = require('./dist/jaccardS');
 exports.dice = require('./dist/dice');
 exports.diceS = require('./dist/diceS');
 exports.fidelity = require('./dist/fidelity');
+exports.bhattacharyya = require('./dist/bhattacharyya');
