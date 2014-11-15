@@ -162,6 +162,10 @@ Returns the [Neyman distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)
 
 Returns the [Squared distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+### probabilisticSymmetric(p, q)
+
+Returns the [Probabilistic Symmetric distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
 ## Contributing
 
 A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file in test/dist.  
