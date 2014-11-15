@@ -11,8 +11,6 @@ describe('Motyka distance', function () {
 
     it('should be correct', function () {
         distance.motyka(v1, v2).should.equal(0.6000000000000001);
-        distance.motyka(v1, v2).should.equal(distance.sorensen(v1, v2) / 2);
-        distance.motyka(v1, v2).should.equal(distance.czekanowski(v1, v2) / 2);
     });
 
 });
