@@ -30,3 +30,4 @@ exports.diceS = require('./dist/diceS');
 exports.fidelity = require('./dist/fidelity');
 exports.bhattacharyya = require('./dist/bhattacharyya');
 exports.hellinger = require('./dist/hellinger');
+exports.matusita = require('./dist/matusita');

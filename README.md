@@ -138,6 +138,10 @@ Returns the [Bhattacharyya  distance](http://www.naun.org/main/NAUN/ijmmas/mmmas
 
 Returns the [Hellinger  distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+### matusita(p, q)
+
+Returns the [Matusita  distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
 ## Contributing
 
 A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file in test/dist.  
