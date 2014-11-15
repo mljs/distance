@@ -33,3 +33,4 @@ exports.hellinger = require('./dist/hellinger');
 exports.matusita = require('./dist/matusita');
 exports.squaredChord = require('./dist/squaredChord');
 exports.squaredChordS = require('./dist/squaredChordS');
+exports.pearson = require('./dist/pearson');

@@ -14,10 +14,6 @@ $ npm install ml-distance
 
 Returns the [euclidean distance](http://en.wikipedia.org/wiki/Euclidean_distance#n_dimensions) between vectors p and q
 
-### squaredEuclidean(p, q)
-
-Returns the [squared euclidean distance](http://en.wikipedia.org/wiki/Euclidean_distance#Squared_Euclidean_distance) between vectors p and q
-
 ### manhattan(p, q)
 
 Returns the [city block distance](http://en.wikipedia.org/wiki/Taxicab_geometry) between vectors p and q
@@ -149,6 +145,14 @@ Returns the [Squared-chord distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-
 ### squaredChordS(p, q)
 
 Returns the [Squared-chord similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
+### squaredEuclidean(p, q)
+
+Returns the [squared euclidean distance](http://en.wikipedia.org/wiki/Euclidean_distance#Squared_Euclidean_distance) between vectors p and q
+
+### pearson(p, q)
+
+Returns the [Pearson distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
 ## Contributing
 
