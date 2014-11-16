@@ -10,7 +10,7 @@ describe('Probabilistic Symmetric distance', function () {
     });
 
     it('should be correct', function () {
-        distance.probabilisticSymmetric(v1, v2).should.equal(2 * 32.41666666666667);
+        distance.probabilisticSymmetric(v1, v2).should.equal(12.18901098901099);
         distance.probabilisticSymmetric(v1, v2).should.equal(2 * distance.squared(v1, v2));
     });
 

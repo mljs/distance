@@ -10,7 +10,7 @@ describe('Squared distance', function () {
     });
 
     it('should be correct', function () {
-        distance.squared(v1, v2).should.equal(32.41666666666667);
+        distance.squared(v1, v2).should.equal(6.094505494505495);
     });
 
 });

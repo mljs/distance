@@ -10,7 +10,7 @@ describe('Pearson distance', function () {
     });
 
     it('should be correct', function () {
-        distance.pearson(v1, v2).should.equal(32.41666666666667);
+        distance.pearson(v1, v2).should.equal(8.277777777777779);
     });
 
 });

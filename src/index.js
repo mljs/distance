@@ -39,3 +39,4 @@ exports.squared = require('./dist/squared');
 exports.probabilisticSymmetric = require('./dist/probabilisticSymmetric');
 exports.divergence = require('./dist/divergence');
 exports.clark = require('./dist/clark');
+exports.additiveSymmetric = require('./dist/additiveSymmetric');
