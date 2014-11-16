@@ -190,6 +190,10 @@ Returns the [Jeffreys distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pd
 
 Returns the [K divergence distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+### topsoe(p, q)
+
+Returns the [Topsøe distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
 ## Contributing
 
 A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file in test/dist.  
