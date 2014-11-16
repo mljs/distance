@@ -176,7 +176,11 @@ Returns the [Clark distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) 
 
 ### additiveSymmetric(p, q)
 
-Returns the [Additive Symmetric  distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+Returns the [Additive Symmetric distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
+### kullbackLeibler(p, q)
+
+Returns the [Kullback-Leibler distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
 ## Contributing
 

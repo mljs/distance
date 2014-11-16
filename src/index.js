@@ -40,3 +40,4 @@ exports.probabilisticSymmetric = require('./dist/probabilisticSymmetric');
 exports.divergence = require('./dist/divergence');
 exports.clark = require('./dist/clark');
 exports.additiveSymmetric = require('./dist/additiveSymmetric');
+exports.kullbackLeibler = require('./dist/kullbackLeibler');
