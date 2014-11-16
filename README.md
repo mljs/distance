@@ -198,6 +198,10 @@ Returns the [Topsøe distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf
 
 Returns the [Jensen-Shannon distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+### jensenDifference(p, q)
+
+Returns the [Jensen difference distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
 ## Contributing
 
 A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file in test/dist.  

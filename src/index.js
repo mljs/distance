@@ -45,3 +45,4 @@ exports.jeffreys = require('./dist/jeffreys');
 exports.kdivergence = require('./dist/kdivergence');
 exports.topsoe = require('./dist/topsoe');
 exports.jensenShannon = require('./dist/jensenShannon');
+exports.jensenDifference = require('./dist/jensenDifference');
