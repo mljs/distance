@@ -44,3 +44,4 @@ exports.kullbackLeibler = require('./dist/kullbackLeibler');
 exports.jeffreys = require('./dist/jeffreys');
 exports.kdivergence = require('./dist/kdivergence');
 exports.topsoe = require('./dist/topsoe');
+exports.jensenShannon = require('./dist/jensenShannon');
