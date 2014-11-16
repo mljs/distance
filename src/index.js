@@ -42,3 +42,4 @@ exports.clark = require('./dist/clark');
 exports.additiveSymmetric = require('./dist/additiveSymmetric');
 exports.kullbackLeibler = require('./dist/kullbackLeibler');
 exports.jeffreys = require('./dist/jeffreys');
+exports.kdivergence = require('./dist/kdivergence');
