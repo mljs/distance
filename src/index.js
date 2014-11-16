@@ -38,3 +38,4 @@ exports.neyman = require('./dist/neyman');
 exports.squared = require('./dist/squared');
 exports.probabilisticSymmetric = require('./dist/probabilisticSymmetric');
 exports.divergence = require('./dist/divergence');
+exports.clark = require('./dist/clark');
