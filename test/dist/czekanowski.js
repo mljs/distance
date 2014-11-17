@@ -11,7 +11,7 @@ describe('Czekanowski distance', function () {
 
     it('should be correct', function () {
         distance.czekanowski(v1, v2).should.equal(0.20000000000000007);
-        distance.czekanowski(v1, v2).should.equal(distance.sorensen(v1, v2));
+        distance.czekanowski(v1, v2).should.be.approximately(distance.sorensen(v1, v2), 0.00001);
     });
 
 });
