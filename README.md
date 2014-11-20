@@ -1,5 +1,8 @@
 # ml-distance
 
+  [![NPM version][npm-image]][npm-url]
+  [![build status][travis-image]][travis-url]
+
 Distance functions to compare vectors
 
 ## Installation
@@ -227,6 +230,16 @@ $ npm install
 $ npm test
 ```
 
+## Authors
+
+  - [Michaël Zasso](https://github.com/targos)
+  - [Miguel Angel Asencio Hurtado](https://github.com/maasencioh)
+
 ## License
 
   MIT
+
+[npm-image]: https://img.shields.io/npm/v/ml-distance.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/ml-distance
+[travis-image]: https://img.shields.io/travis/mljs/distance/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/mljs/distance
