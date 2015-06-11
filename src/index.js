@@ -49,3 +49,4 @@ exports.jensenDifference = require('./dist/jensenDifference');
 exports.taneja = require('./dist/taneja');
 exports.kumarJohnson = require('./dist/kumarJohnson');
 exports.avg = require('./dist/avg');
+exports.tree = require('./dist/tree');
