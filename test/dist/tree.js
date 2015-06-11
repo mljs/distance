@@ -13,7 +13,7 @@ var b = {
 describe('Tree similarity', function () {
 
     it('should be correct', function () {
-        distance.tree(a, b, 1, 7, 0.1, 0.33, 0.001, 2).should.equal(0.0610374678139636);
+        distance.tree(a, b, 1, 7).should.be.approximately(0.685253,0.0001);
     });
 
 });

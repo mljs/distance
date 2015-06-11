@@ -29,6 +29,7 @@ function createTree (X, Y, from, to, minWindow, threshold) {
             center += X[j] * Y[j];
     }
     center = center / sum;
+    if (((center - from) < 10e-6) || ((to - center) < 10e-6)) return undefined;
     if ((center - from) < (minWindow /4)) {
         return createTree(X, Y, center, to, minWindow, threshold);
     }
@@ -87,7 +88,6 @@ module.exports = function tree(A, B, from, to, alpha, beta, gamma, minWindow, th
     gamma = (typeof gamma === 'undefined') ? 0.001: gamma;
     var Atree = createTree(A.x, A.y, from, to, minWindow, threshold);
     var Btree = createTree(B.x, B.y, from, to, minWindow, threshold);
-    console.log(Atree);
     return S(Atree, Btree, alpha, beta, gamma);
 };
 
