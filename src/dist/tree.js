@@ -13,6 +13,8 @@
  * undefined value if are leafs
  */
 function createTree (X, Y, from, to, minWindow, threshold) {
+    minWindow = minWindow || 0.16;
+    threshold = threshold || 0.01;
     if ((to - from) < minWindow)
         return undefined;
     var sum = 0;
@@ -68,26 +70,49 @@ function S(a, b, alpha, beta, gamma) {
 }
 
 /**
+ * @type {number} alpha - weights the relative importance of intensity vs. shift match
+ * @type {number} beta - weights the relative importance of node matching and children matching
+ * @type {number} gamma - controls the attenuation of the effect of chemical shift differences
+ * @type {number} minWindow - smallest range to accept in x
+ * @type {number} threshold - smallest range to accept in y
+ */
+var defaultOptions = {
+    minWindow: 0.16,
+    threshold : 0.01,
+    alpha: 0.1,
+    beta: 0.33,
+    gamma: 0.001
+};
+
+/**
  * Builds a tree based in the spectra and compares this trees
  * @param {{x: Array<number>, y: Array<number>}} A - first spectra to be compared
  * @param {{x: Array<number>, y: Array<number>}} B - second spectra to be compared
  * @param {number} from - the low limit of x
  * @param {number} to - the top limit of x
- * @param {number} alpha - weights the relative importance of intensity vs. shift match
- * @param {number} beta - weights the relative importance of node matching and children matching
- * @param {number} gamma - controls the attenuation of the effect of chemical shift differences
- * @param {number} minWindow - smallest range to accept in x
- * @param {number} threshold - smallest range to accept in y
+ * @param {{minWindow: number, threshold: number, alpha: number, beta: number, gamma: number}} options
  * @returns {number} similarity measure between the spectra
  */
-module.exports = function tree(A, B, from, to, alpha, beta, gamma, minWindow, threshold) {
-    minWindow = (typeof minWindow === 'undefined') ? 0.16: minWindow;
-    threshold = (typeof threshold === 'undefined') ? 0.01: threshold;
-    alpha = (typeof alpha === 'undefined') ? 0.1: alpha;
-    beta = (typeof beta === 'undefined') ? 0.33: beta;
-    gamma = (typeof gamma === 'undefined') ? 0.001: gamma;
-    var Atree = createTree(A.x, A.y, from, to, minWindow, threshold);
-    var Btree = createTree(B.x, B.y, from, to, minWindow, threshold);
-    return S(Atree, Btree, alpha, beta, gamma);
+function tree(A, B, from, to, options) {
+    options = options || {};
+    for (var o in defaultOptions)
+        if (!options.hasOwnProperty(o)) {
+            options[o] = defaultOptions[o];
+        }
+    var Atree, Btree;
+    if (A.sum)
+        Atree = A;
+    else
+        Atree = createTree(A.x, A.y, from, to, options.minWindow, options.threshold);
+    if (B.sum)
+        Btree = B;
+    else
+        Btree = createTree(B.x, B.y, from, to, options.minWindow, options.threshold);
+    return S(Atree, Btree, options.alpha, options.beta, options.gamma);
+}
+
+module.exports = {
+    calc: tree,
+    createTree: createTree
 };
 

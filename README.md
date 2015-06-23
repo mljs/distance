@@ -221,6 +221,12 @@ Returns the average of city block and Chebyshev distances between vectors p and 
 
 Returns the [tree similarity](http://www.researchgate.net/publication/257035181_Fast_and_shift-insensitive_similarity_comparisons_of_NMR_using_a_tree-representation_of_spectra) between two spectra in the format {'x':Array,'y':Array}
 
+__calc__
+Calculates the tree similarity
+
+__createTree__
+Creates the tree based in the input dataset
+
 ## Contributing
 
 A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file in test/dist.  
