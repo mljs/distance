@@ -1,6 +1,6 @@
 {
   "name": "ml-distance",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Distance and similarity functions to compare vectors",
   "main": "src/index.js",
   "directories": {
@@ -25,7 +25,10 @@
     "machine",
     "learning"
   ],
-  "author": ["Michaël Zasso","Miguel Asencio"],
+  "author": [
+    "Michaël Zasso",
+    "Miguel Asencio"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mljs/distance/issues"
