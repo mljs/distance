@@ -89,9 +89,9 @@ Returns the [Kulczynski similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-4
 
 Returns the [Ruzicka similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
-### tanimoto(p, q)
+### tanimoto(p, q, [bitVector])
 
-Returns the [Tanimoto distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+Returns the [Tanimoto distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q, and accepts the bitVector use, see the test case for an example
 
 ### innerProduct(p, q)
 

@@ -19,6 +19,7 @@ exports.motyka = require('./dist/motyka');
 exports.kulczynskiS = require('./dist/kulczynskiS');
 exports.ruzicka = require('./dist/ruzicka');
 exports.tanimoto = require('./dist/tanimoto');
+exports.tanimotoS = require('./dist/tanimotoS');
 exports.innerProduct = require('./dist/innerProduct');
 exports.harmonicMean = require('./dist/harmonicMean');
 exports.cosine = require('./dist/cosine');
