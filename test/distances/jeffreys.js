@@ -6,7 +6,7 @@ var v2 = [0.3, 0.2, 0.3, 0.2];
 describe('Jeffreys similarity', function () {
 
     it('should be correct', function () {
-        distance.jeffreys(v1, v2).should.equal(0.2484906649788);
+        distance.distance.jeffreys(v1, v2).should.equal(0.2484906649788);
     });
 
 });

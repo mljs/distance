@@ -1,7 +1,6 @@
-var tanimotoS = require('./tanimotoS');
+var tanimotoS = require('./../similarities/tanimoto');
 
 module.exports = function tanimoto(a, b, bitvector) {
-    bitvector = bitvector || false;
     if (bitvector)
         return 1 - tanimotoS(a, b, bitvector);
     else {

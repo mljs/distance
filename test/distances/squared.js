@@ -6,11 +6,11 @@ var v2 = [3, 6, 9, 4, 3];
 describe('Squared distance', function () {
 
     it('should return 0 with itself', function () {
-        distance.squared(v1, v1).should.equal(0);
+        distance.distance.squared(v1, v1).should.equal(0);
     });
 
     it('should be correct', function () {
-        distance.squared(v1, v2).should.equal(6.094505494505495);
+        distance.distance.squared(v1, v2).should.equal(6.094505494505495);
     });
 
 });

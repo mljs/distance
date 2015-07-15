@@ -13,11 +13,11 @@ var b = {
 describe('Tree similarity', function () {
 
     it('should be correct', function () {
-        distance.tree.calc(a, b, 1, 7).should.be.approximately(0.685253,10e-4);
+        distance.distance.tree.calc(a, b, 1, 7).should.be.approximately(0.685253,10e-4);
     });
 
     it('exports tree', function () {
-        distance.tree.createTree(a.x, a.y, 1, 7).center.should.be.approximately(4.5,10e-4);
+        distance.distance.tree.createTree(a.x, a.y, 1, 7).center.should.be.approximately(4.5,10e-4);
     });
 
 });

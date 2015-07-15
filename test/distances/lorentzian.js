@@ -6,11 +6,11 @@ var v2 = [3, 6, 9, 4, 3];
 describe('lorentzian distance', function () {
 
     it('should return 0 with itself', function () {
-        distance.lorentzian(v1, v1).should.equal(0);
+        distance.distance.lorentzian(v1, v1).should.equal(0);
     });
 
     it('should be correct', function () {
-        distance.lorentzian(v1, v2).should.equal(Math.log(864));
+        distance.distance.lorentzian(v1, v2).should.equal(Math.log(864));
     });
 
 });

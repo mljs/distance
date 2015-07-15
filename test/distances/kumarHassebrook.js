@@ -6,7 +6,7 @@ var v2 = [0.3, 0.2, 0.3, 0.2];
 describe('Kumar-Hassebrook similarity', function () {
 
     it('should be correct', function () {
-        distance.kumarHassebrook(v1, v2).should.equal(0.8064516129032256);
+        distance.distance.kumarHassebrook(v1, v2).should.equal(0.8064516129032256);
     });
 
 });

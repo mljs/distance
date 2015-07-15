@@ -1,4 +1,4 @@
-var distance = require('../..');
+var distance = require('../../src/index.js');
 
 var v1 = [0.2, 0.4, 0.3, 0.1];
 var v2 = [0.3, 0.2, 0.3, 0.2];
@@ -15,13 +15,13 @@ bv2[2] = 1;
 describe('Tanimoto similarity', function () {
 
     it('should return 1 with itself', function () {
-        distance.tanimotoS(v1, v1).should.equal(1);
-        distance.tanimotoS(bv1, bv1, true).should.equal(1);
+        distance.similarity.tanimoto(v1, v1).should.equal(1);
+        distance.similarity.tanimoto(bv1, bv1, true).should.equal(1);
     });
 
     it('should be correct', function () {
-        distance.tanimotoS(v1, v2).should.be.approximately(0.666,0.01);
-        distance.tanimotoS(bv1, bv2, true).should.be.approximately(0.666,0.01);
+        distance.similarity.tanimoto(v1, v2).should.be.approximately(0.666,0.01);
+        distance.similarity.tanimoto(bv1, bv2, true).should.be.approximately(0.666,0.01);
     });
 
 });

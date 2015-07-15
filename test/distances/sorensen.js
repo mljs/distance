@@ -6,11 +6,11 @@ var v2 = [3, 6, 9, 4, 3];
 describe('Sørensen distance', function () {
 
     it('should return 0 with itself', function () {
-        distance.sorensen(v1, v1).should.equal(0);
+        distance.distance.sorensen(v1, v1).should.equal(0);
     });
 
     it('should be correct', function () {
-        distance.sorensen(v1, v2).should.equal(16/38);
+        distance.distance.sorensen(v1, v2).should.equal(16/38);
     });
 
 });

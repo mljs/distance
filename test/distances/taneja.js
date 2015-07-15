@@ -6,7 +6,7 @@ var v2 = [0.3, 0.2, 0.3, 0.2];
 describe('Taneja distance', function () {
 
     it('should be correct', function () {
-        distance.taneja(v1, v2).should.equal(0.031603932337718146);
+        distance.distance.taneja(v1, v2).should.equal(0.031603932337718146);
     });
 
 });

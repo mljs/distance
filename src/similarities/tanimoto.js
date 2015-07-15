@@ -1,4 +1,4 @@
-module.exports = function tanimotoS(a, b, bitvector) { 
+module.exports = function tanimoto(a, b, bitvector) {
     if (bitvector) {
         var inter = 0,
             union = 0;

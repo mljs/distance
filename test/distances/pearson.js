@@ -6,7 +6,7 @@ var v2 = [3, 6, 9, 4, 3];
 describe('Pearson distance', function () {
 
     it('should be correct', function () {
-        distance.pearson(v1, v2).should.equal(11.277777777777779);
+        distance.distance.pearson(v1, v2).should.equal(11.277777777777779);
     });
 
 });
