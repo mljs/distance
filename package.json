@@ -40,6 +40,7 @@
     "should": "^7.0.2"
   },
   "dependencies": {
-    "ml-euclidean-distance": "^1.0.0"
+    "ml-euclidean-distance": "^1.0.0",
+    "ml-tree-similarity": "^0.0.0"
   }
 }

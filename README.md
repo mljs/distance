@@ -191,25 +191,6 @@ Returns the [Kumar-Johnson distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-
 
 Returns the average of city block and Chebyshev distances between vectors p and q
 
-* `tree(a,b, from, to, [options])`
-
-Returns the [tree similarity](http://www.researchgate.net/publication/257035181_Fast_and_shift-insensitive_similarity_comparisons_of_NMR_using_a_tree-representation_of_spectra) between two spectra in the format {'x':Array,'y':Array}
-
-__options__
-
-* alpha - weights the relative importance of intensity vs. shift match
-* beta - weights the relative importance of node matching and children matching
-* gamma - controls the attenuation of the effect of chemical shift differences
-* minWindow - smallest range to accept in x
-* threshold - smallest range to accept in y
-
-__calc__
-
-Calculates the tree similarity
-
-__createTree__
-
-Creates the tree based in the input dataset
 
 ### Similarities
 
@@ -245,6 +226,9 @@ Returns the [Dice similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)
 
 Returns the [Tanimoto similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q, and accepts the bitVector use, see the test case for an example
 
+* `tree(a,b, from, to, [options])`
+
+Refer to [ml-tree-similarity](https://github.com/mljs/tree-similarity)
 
 ## Contributing
 

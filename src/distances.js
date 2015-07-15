@@ -42,6 +42,6 @@ exports.jensenDifference = require('./distances/jensenDifference');
 exports.taneja = require('./distances/taneja');
 exports.kumarJohnson = require('./distances/kumarJohnson');
 exports.avg = require('./distances/avg');
-exports.tree = require('./distances/tree');
+exports.tree = require('ml-tree-similarity');
 exports.additiveSymmetric = require('./distances/additiveSymmetric');
 exports.jensenShannon = require('./distances/jensenShannon');
