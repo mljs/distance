@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "ml-euclidean-distance": "^1.0.0",
+    "ml-stat": "^1.0.1",
     "ml-tree-similarity": "^0.0.0"
   }
 }
