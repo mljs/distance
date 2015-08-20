@@ -1,4 +1,4 @@
-module.exports = function pearson(a, b) {
+module.exports = function neyman(a, b) {
     var i = 0,
         ii = a.length,
         d = 0;
