@@ -35,12 +35,12 @@
   },
   "homepage": "https://github.com/mljs/distance",
   "devDependencies": {
-    "mocha": "^2.2.5",
+    "mocha": "^3.0.0",
     "mocha-better-spec-reporter": "^3.0.2",
-    "should": "^8.4.0"
+    "should": "^10.0.0"
   },
   "dependencies": {
-    "ml-euclidean-distance": "^1.0.0",
+    "ml-distance-euclidean": "^1.0.0",
     "ml-stat": "^1.0.1",
     "ml-tree-similarity": "^0.0.0"
   }
