@@ -1,5 +1,5 @@
 language: node_js
 node_js:
-  - "0.12"
-  - "iojs"
-sudo: false
+  - "4"
+  - "6"
+  - "stable"
