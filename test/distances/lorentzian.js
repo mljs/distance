@@ -10,7 +10,7 @@ describe('lorentzian distance', function () {
     });
 
     it('should be correct', function () {
-        distance.distance.lorentzian(v1, v2).should.equal(Math.log(864));
+        distance.distance.lorentzian(v1, v2).should.approximately(Math.log(864), 1e-6);
     });
 
 });
