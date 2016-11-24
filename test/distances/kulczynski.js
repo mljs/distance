@@ -1,3 +1,5 @@
+'use strict';
+
 var distance = require('../..');
 
 var v1 = [0, 1, 4, 6, 2];
@@ -10,7 +12,7 @@ describe('Kulczynski distance', function () {
     });
 
     it('should be correct', function () {
-        distance.distance.kulczynski(v1, v2).should.equal(16/11);
+        distance.distance.kulczynski(v1, v2).should.equal(16 / 11);
     });
 
 });

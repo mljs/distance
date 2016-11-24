@@ -1,3 +1,5 @@
+'use strict';
+
 var distance = require('../..');
 
 var v1 = [3, 1, 4, 6, 2];

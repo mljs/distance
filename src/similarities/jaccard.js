@@ -1,3 +1,5 @@
+'use strict';
+
 var jaccardD = require('./../distances/jaccard');
 
 module.exports = function jaccard(a, b) {

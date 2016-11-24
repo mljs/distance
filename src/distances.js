@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 exports.additiveSymmetric = require('./distances/additiveSymmetric');
 exports.avg = require('./distances/avg');

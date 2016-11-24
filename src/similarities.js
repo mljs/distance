@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 exports.cosine = require('./similarities/cosine');
 exports.czekanowski = require('./similarities/czekanowski');

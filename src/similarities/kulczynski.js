@@ -1,3 +1,5 @@
+'use strict';
+
 var kulczynskiD = require('./../distances/kulczynski');
 
 module.exports = function kulczynski(a, b) {
