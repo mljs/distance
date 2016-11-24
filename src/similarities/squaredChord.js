@@ -1,3 +1,5 @@
+'use strict';
+
 var squaredChordD = require('./../distances/squaredChord');
 
 module.exports = function squaredChord(a, b) {

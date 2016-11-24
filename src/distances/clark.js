@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function clark(a, b) {
     var i = 0,
         ii = a.length,

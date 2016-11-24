@@ -1,3 +1,5 @@
+'use strict';
+
 var distance = require('../..');
 
 var v1 = [0, 1, 4, 6, 2];
@@ -10,7 +12,7 @@ describe('Gower distance', function () {
     });
 
     it('should be correct', function () {
-        distance.distance.gower(v1, v2).should.equal(16/5);
+        distance.distance.gower(v1, v2).should.equal(16 / 5);
     });
 
 });

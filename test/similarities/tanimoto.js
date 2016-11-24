@@ -1,3 +1,5 @@
+'use strict';
+
 var distance = require('../..');
 
 var v1 = [0.2, 0.4, 0.3, 0.1];
@@ -20,8 +22,8 @@ describe('Tanimoto similarity', function () {
     });
 
     it('should be correct', function () {
-        distance.similarity.tanimoto(v1, v2).should.be.approximately(0.666,0.01);
-        distance.similarity.tanimoto(bv1, bv2, true).should.be.approximately(0.666,0.01);
+        distance.similarity.tanimoto(v1, v2).should.be.approximately(0.666, 0.01);
+        distance.similarity.tanimoto(bv1, bv2, true).should.be.approximately(0.666, 0.01);
     });
 
 });

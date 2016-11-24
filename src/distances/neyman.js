@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function neyman(a, b) {
     var i = 0,
         ii = a.length,
