@@ -1,6 +1,6 @@
 {
   "name": "ml-distance",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "description": "Distance and similarity functions to compare vectors",
   "main": "lib/index.js",
   "module": "src/index.js",
