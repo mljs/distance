@@ -1,7 +1,5 @@
-'use strict';
+import squaredChordD from '../distances/squaredChord';
 
-var squaredChordD = require('./../distances/squaredChord');
-
-module.exports = function squaredChord(a, b) {
-    return 1 - squaredChordD(a, b);
-};
+export default function squaredChord(a, b) {
+  return 1 - squaredChordD(a, b);
+}

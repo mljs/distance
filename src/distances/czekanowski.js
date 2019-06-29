@@ -1,7 +1,5 @@
-'use strict';
+import czekanowskiSimilarity from '../similarities/czekanowski';
 
-const czekanowskiSimilarity = require('../similarities/czekanowski');
-
-module.exports = function czekanowskiDistance(a, b) {
-    return 1 - czekanowskiSimilarity(a, b);
-};
+export default function czekanowskiDistance(a, b) {
+  return 1 - czekanowskiSimilarity(a, b);
+}

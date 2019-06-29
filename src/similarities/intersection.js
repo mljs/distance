@@ -1,7 +1,5 @@
-'use strict';
+import intersectionD from '../distances/intersection';
 
-var intersectionD = require('./../distances/intersection');
-
-module.exports = function intersection(a, b) {
-    return 1 - intersectionD(a, b);
-};
+export default function intersection(a, b) {
+  return 1 - intersectionD(a, b);
+}

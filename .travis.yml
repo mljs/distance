@@ -1,6 +1,7 @@
 language: node_js
 node_js:
-  - node
-  - lts/boron #v6
-  - lts/argon #v4
-sudo: false
+  - 12
+  - 10
+  - 8
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

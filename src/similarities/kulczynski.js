@@ -1,7 +1,5 @@
-'use strict';
+import kulczynskiD from '../distances/kulczynski';
 
-var kulczynskiD = require('./../distances/kulczynski');
-
-module.exports = function kulczynski(a, b) {
-    return 1 / kulczynskiD(a, b);
-};
+export default function kulczynski(a, b) {
+  return 1 / kulczynskiD(a, b);
+}

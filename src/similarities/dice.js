@@ -1,7 +1,5 @@
-'use strict';
+import diceD from '../distances/dice';
 
-var diceD = require('./../distances/dice');
-
-module.exports = function dice(a, b) {
-    return 1 - diceD(a, b);
-};
+export default function dice(a, b) {
+  return 1 - diceD(a, b);
+}

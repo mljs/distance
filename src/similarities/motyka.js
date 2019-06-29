@@ -1,7 +1,5 @@
-'use strict';
+import motykaD from '../distances/motyka';
 
-var motykaD = require('./../distances/motyka');
-
-module.exports = function motyka(a, b) {
-    return 1 - motykaD(a, b);
-};
+export default function motyka(a, b) {
+  return 1 - motykaD(a, b);
+}

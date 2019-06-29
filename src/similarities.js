@@ -1,12 +1,14 @@
-'use strict';
+import * as tree from 'ml-tree-similarity';
 
-exports.cosine = require('./similarities/cosine');
-exports.czekanowski = require('./similarities/czekanowski');
-exports.dice = require('./similarities/dice');
-exports.intersection = require('./similarities/intersection');
-exports.jaccard = require('./similarities/jaccard');
-exports.kulczynski = require('./similarities/kulczynski');
-exports.motyka = require('./similarities/motyka');
-exports.pearson = require('./similarities/pearson');
-exports.squaredChord = require('./similarities/squaredChord');
-exports.tanimoto = require('./similarities/tanimoto');
+export { tree };
+
+export { default as cosine } from './similarities/cosine';
+export { default as czekanowski } from './similarities/czekanowski';
+export { default as dice } from './similarities/dice';
+export { default as intersection } from './similarities/intersection';
+export { default as jaccard } from './similarities/jaccard';
+export { default as kulczynski } from './similarities/kulczynski';
+export { default as motyka } from './similarities/motyka';
+export { default as pearson } from './similarities/pearson';
+export { default as squaredChord } from './similarities/squaredChord';
+export { default as tanimoto } from './similarities/tanimoto';

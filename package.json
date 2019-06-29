@@ -2,16 +2,20 @@
   "name": "ml-distance",
   "version": "2.1.1",
   "description": "Distance and similarity functions to compare vectors",
-  "main": "src/index.js",
-  "directories": {
-    "lib": "src",
-    "test": "test"
-  },
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "files": [
+    "src",
+    "lib"
+  ],
   "scripts": {
-    "eslint": "eslint src test",
+    "compile": "rollup -c",
+    "eslint": "eslint src",
     "eslint-fix": "npm run eslint -- --fix",
-    "test": "npm run test-mocha && npm run eslint",
-    "test-mocha": "mocha --require should --reporter mocha-better-spec-reporter --recursive"
+    "prepublishOnly": "npm run compile",
+    "test": "npm run test-coverage && npm run eslint",
+    "test-only": "jest",
+    "test-coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -38,16 +42,17 @@
   },
   "homepage": "https://github.com/mljs/distance",
   "devDependencies": {
-    "eslint": "^3.4.0",
-    "eslint-config-cheminfo": "^1.2.0",
-    "eslint-plugin-no-only-tests": "^1.1.0",
-    "mocha": "^3.1.2",
-    "mocha-better-spec-reporter": "^3.0.2",
-    "should": "^11.1.0"
+    "@babel/plugin-transform-modules-commonjs": "^7.4.4",
+    "eslint": "^6.0.1",
+    "eslint-config-cheminfo": "^1.20.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jest": "^22.7.1",
+    "jest": "^24.8.0",
+    "rollup": "^1.16.3"
   },
   "dependencies": {
-    "ml-distance-euclidean": "^1.0.0",
-    "ml-stat": "^1.0.1",
-    "ml-tree-similarity": "^0.0.0"
+    "ml-array-mean": "^1.1.1",
+    "ml-distance-euclidean": "^2.0.0",
+    "ml-tree-similarity": "^1.0.0"
   }
 }

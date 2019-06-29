@@ -1,4 +1,4 @@
-'use strict';
+import * as distance from './distances';
+import * as similarity from './similarities';
 
-exports.distance = require('./distances');
-exports.similarity = require('./similarities');
+export { distance, similarity };
