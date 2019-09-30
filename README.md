@@ -18,6 +18,8 @@ Distance functions to compare vectors.
 
 Returns the [euclidean distance](http://en.wikipedia.org/wiki/Euclidean_distance#n_dimensions) between vectors p and q
 
+<img src="https://tex.cheminfo.org/?tex=\sqrt{\sum_{i=1}^{n}%20(q_i%20-%20p_i)^2%20}">
+
 - `manhattan(p, q)`
 
 Returns the [city block distance](http://en.wikipedia.org/wiki/Taxicab_geometry) between vectors p and q
