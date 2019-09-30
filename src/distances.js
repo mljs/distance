@@ -22,7 +22,6 @@ export { default as jensenShannon } from './distances/jensenShannon';
 export { default as kdivergence } from './distances/kdivergence';
 export { default as kulczynski } from './distances/kulczynski';
 export { default as kullbackLeibler } from './distances/kullbackLeibler';
-export { default as kumarHassebrook } from './distances/kumarHassebrook';
 export { default as kumarJohnson } from './distances/kumarJohnson';
 export { default as lorentzian } from './distances/lorentzian';
 export { default as manhattan } from './distances/manhattan';
