@@ -1,11 +1,8 @@
 export default function clark(a, b) {
-  var i = 0;
-  var ii = a.length;
   var d = 0;
-  for (; i < ii; i++) {
-    d += Math.sqrt(
-      ((a[i] - b[i]) * (a[i] - b[i])) / ((a[i] + b[i]) * (a[i] + b[i]))
-    );
+  for (let i = 0; i < a.length; i++) {
+    d +=
+      (Math.abs(a[i] - b[i]) / ((a[i] + b[i]))) ** 2;
   }
-  return 2 * d;
+  return Math.sqrt(d);
 }

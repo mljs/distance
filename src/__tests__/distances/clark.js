@@ -9,6 +9,6 @@ describe('Clark distance', function () {
   });
 
   it('should be correct', function () {
-    expect(distance.clark(v1, v2)).toBe(2.997802197802198);
+    expect(distance.clark(v1, v2)).toBeCloseTo(0.85914671, 5);
   });
 });
