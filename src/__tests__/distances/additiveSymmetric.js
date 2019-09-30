@@ -9,6 +9,6 @@ describe('Aditive Symmetric distance', function () {
   });
 
   it('should be correct', function () {
-    expect(distance.additiveSymmetric(v1, v2)).toBe(81.38888888888889);
+    expect(distance.additiveSymmetric(v1, v2)).toBeCloseTo(40.694444, 4);
   });
 });

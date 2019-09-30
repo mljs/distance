@@ -5,5 +5,5 @@ export default function additiveSymmetric(a, b) {
   for (; i < ii; i++) {
     d += ((a[i] - b[i]) * (a[i] - b[i]) * (a[i] + b[i])) / (a[i] * b[i]);
   }
-  return 2 * d;
+  return d;
 }
