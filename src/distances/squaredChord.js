@@ -3,7 +3,7 @@ export default function squaredChord(a, b) {
   var ans = 0;
   for (var i = 0; i < ii; i++) {
     ans +=
-      (Math.sqrt(a[i]) - Math.sqrt(b[i])) * (Math.sqrt(a[i]) - Math.sqrt(b[i]));
+      (Math.sqrt(a[i]) - Math.sqrt(b[i])) ** 2;
   }
   return ans;
 }
