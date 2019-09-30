@@ -1,12 +1,11 @@
 export default function dice(a, b) {
-  var ii = a.length;
-  var p = 0;
-  var q1 = 0;
-  var q2 = 0;
-  for (var i = 0; i < ii; i++) {
-    p += a[i] * a[i];
-    q1 += b[i] * b[i];
-    q2 += (a[i] - b[i]) * (a[i] - b[i]);
+  let a2 = 0;
+  let b2 = 0;
+  let prod2 = 0;
+  for (let i = 0; i < a.length; i++) {
+    a2 += a[i] * a[i];
+    b2 += b[i] * b[i];
+    prod2 += (a[i] - b[i]) * (a[i] - b[i]);
   }
-  return q2 / (p + q1);
+  return prod2 / (a2 + b2);
 }
