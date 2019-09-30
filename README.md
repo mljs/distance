@@ -256,7 +256,7 @@ Returns the [Jensen-Shannon distance](http://www.naun.org/main/NAUN/ijmmas/mmmas
 
 Returns the [Jensen difference distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
-<img src="https://tex.cheminfo.org/?tex=d(p,q)=\sum\limits_{i=1}^{n}{\left[\frac{p_i\ln p_i%2bq_i\ln q_i}{2}-\left(\frac{p_i%2bq_i}{2}\right)\ln\left(\frac{p_i%2bq_i}{2}\right)\right]}">
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=\sum\limits_{i=1}^{n}{\left[\frac{p_i\ln{p_i}%2bq_i\ln{q_i}}{2}-\left(\frac{p_i%2bq_i}{2}\right)\ln\left(\frac{p_i%2bq_i}{2}\right)\right]}">
 
 - `taneja(p, q)`
 
