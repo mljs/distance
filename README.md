@@ -18,11 +18,13 @@ Distance functions to compare vectors.
 
 Returns the [euclidean distance](http://en.wikipedia.org/wiki/Euclidean_distance#n_dimensions) between vectors p and q
 
-<img src="https://tex.cheminfo.org/?tex=\sqrt{\sum_{i=1}^{n}%20(q_i%20-%20p_i)^2%20}">
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=\sqrt{\sum\limits_{i=1}^{n}(p_i-q_i)^2}">
 
 - `manhattan(p, q)`
 
 Returns the [city block distance](http://en.wikipedia.org/wiki/Taxicab_geometry) between vectors p and q
+
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=\sum\limits_{i=1}^{n}{\left|p_i-q_i\right|}">
 
 - `minkowski(p, q, d)`
 
@@ -32,49 +34,75 @@ Returns the [Minkowski distance](http://en.wikipedia.org/wiki/Minkowski_distance
 
 Returns the [Chebyshev distance](http://en.wikipedia.org/wiki/Chebyshev_distance) between vectors p and q
 
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=\max_i(|p_i-q_i|)">
+
 - `sorensen(p, q)`
 
 Returns the [Sørensen distance](http://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient) between vectors p and q
+
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=\frac{\sum\limits_{i=1}^{n}{\left|p_i-q_i\right|}}{\sum\limits_{i=1}^{n}{p_i%2Bq_i}}">
 
 - `gower(p, q)`
 
 Returns the [Gower distance](https://stat.ethz.ch/education/semesters/ss2012/ams/slides/v4.2.pdf) between vectors p and q
 
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=\frac{\sum\limits_{i=1}^{n}{\left|p_i-q_i\right|}}{n}">
+
 - `soergel(p, q)`
 
 Returns the [Soergel distance](http://www.orgchm.bas.bg/~vmonev/SimSearch.pdf) between vectors p and q
+
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=\frac{\sum\limits_{i=1}^{n}{\left|p_i-q_i\right|}}{max(p_i,q_i)}">
 
 - `kulczynski(p, q)`
 
 Returns the [Kulczynski distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=\frac{\sum\limits_{i=1}^{n}{\left|p_i-q_i\right|}}{min(p_i,q_i)}">
+
 - `canberra(p, q)`
 
 Returns the [Canberra distance](http://en.wikipedia.org/wiki/Canberra_distance) between vectors p and q
+
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=\sum\limits_{i=1}^{n}\frac{\left|{p_i-q_i}\right|}{p_i%2bq_i}">
 
 - `lorentzian(p, q)`
 
 Returns the [Lorentzian distance](https://stat.ethz.ch/education/semesters/ss2012/ams/slides/v4.2.pdf) between vectors p and q
 
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=\sum\limits_{i=1}^{n}ln(\left|{p_i-q_i}\right|%2b1)">
+
 - `intersection(p, q)`
 
 Returns the [Intersection distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=1-\sum\limits_{i=1}^{n}min(p_i,q_i)">
 
 - `waveHedges(p, q)`
 
 Returns the [Wave Hedges distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=\sum\limits_{i=1}^{n}\left(1-\frac{min(p_i,q_i)}{max(p_i,q_i)}\right)">
+
 - `czekanowski(p, q)`
 
 Returns the [Czekanowski distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=1-\frac{2\sum\limits_{i=1}^{n}{min(p_i,q_i)}}{\sum\limits_{i=1}^{n}{p_i%2Bq_i}}">
 
 - `motyka(p, q)`
 
 Returns the [Motyka distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=1-\frac{\sum\limits_{i=1}^{n}{min(p_i,q_i)}}{\sum\limits_{i=1}^{n}{p_i%2Bq_i}}">
+
+Note: distance between 2 identical vectors is 0.5 !
+
 - `ruzicka(p, q)`
 
 Returns the [Ruzicka similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=\frac{\sum\limits_{i=1}^{n}{max(p_i,q_i)}}{\sum\limits_{i=1}^{n}{min(p_i,q_i)}}">
 
 - `tanimoto(p, q, [bitVector])`
 
@@ -84,33 +112,49 @@ Returns the [Tanimoto distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pd
 
 Returns the [Inner Product similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+<img src="https://tex.cheminfo.org/?tex=s(p,q)=\sum\limits_{i=1}^{n}{p_i*q_i}">
+
 - `harmonicMean(p, q)`
 
 Returns the [Harmonic mean similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=2\sum\limits_{i=1}^{n}\frac{p_i*q_i}{p_i%2bq_i}">
 
 - `cosine(p, q)`
 
 Returns the [Cosine similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=\frac{\sum\limits_{i=1}^{n}{p_i*q_i}}{\sum\limits_{i=1}^{n}{p_i^2}\sum\limits_{i=1}^{n}{q_i^2}}">
+
 - `kumarHassebrook(p, q)`
 
 Returns the [Kumar-Hassebrook similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=\frac{\sum\limits_{i=1}^{n}{p_i*q_i}}{\sum\limits_{i=1}^{n}{p_i^2}%2b\sum\limits_{i=1}^{n}{q_i^2}-\sum\limits_{i=1}^{n}{p_i*q_i}}">
 
 - `jaccard(p, q)`
 
 Returns the [Jaccard distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=1-\frac{\sum\limits_{i=1}^{n}{p_i*q_i}}{\sum\limits_{i=1}^{n}{p_i^2}%2b\sum\limits_{i=1}^{n}{q_i^2}-\sum\limits_{i=1}^{n}{p_i*q_i}}">
+
 - `dice(p, q)`
 
 Returns the [Dice distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=1-\frac{\sum\limits_{i=1}^{n}{(p_i-q_i)^2}}{\sum\limits_{i=1}^{n}{p_i^2}%2b\sum\limits_{i=1}^{n}{q_i^2}}">
 
 - `fidelity(p, q)`
 
 Returns the [Fidelity similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=\sum\limits_{i=1}^{n}{\sqrt{p_i*q_i}}">
+
 - `bhattacharyya(p, q)`
 
 Returns the [Bhattacharyya distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
+<img src="https://tex.cheminfo.org/?tex=d(p,q)=-ln\left(\sum\limits_{i=1}^{n}{\sqrt{p_i*q_i}}\right)">
 
 - `hellinger(p, q)`
 
