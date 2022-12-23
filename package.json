@@ -55,6 +55,7 @@
     "rollup": "^3.8.1"
   },
   "dependencies": {
+    "cheminfo-types": "^1.4.0",
     "ml-array-mean": "^1.1.6",
     "ml-distance-euclidean": "^2.0.0",
     "ml-tree-similarity": "^1.0.0"
