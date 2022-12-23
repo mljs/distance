@@ -3,21 +3,27 @@
   "version": "3.0.0",
   "description": "Distance and similarity functions to compare vectors",
   "main": "lib/index.js",
-  "module": "src/index.js",
+  "module": "./lib-esm/index.js",
   "files": [
     "src",
-    "lib"
+    "lib",
+    "lib-esm"
   ],
+  "types": "./lib/index.d.ts",
   "scripts": {
-    "compile": "rollup -c",
+    "check-types": "tsc --noEmit",
+    "clean": "rimraf lib lib-esm",
     "eslint": "eslint src",
     "eslint-fix": "npm run eslint -- --fix",
-    "prepublishOnly": "npm run compile",
+    "prepack": "npm run tsc",
     "prettier": "prettier --check src",
     "prettier-write": "prettier --write src",
-    "test": "npm run test-coverage && npm run eslint",
+    "test": "npm run test-coverage && npm run eslint && npm run check-types",
     "test-only": "jest",
-    "test-coverage": "jest --coverage"
+    "test-coverage": "jest --coverage",
+    "tsc": "npm run clean && npm run tsc-cjs && npm run tsc-esm",
+    "tsc-cjs": "tsc --project tsconfig.cjs.json",
+    "tsc-esm": "tsc --project tsconfig.esm.json"
   },
   "repository": {
     "type": "git",
@@ -45,17 +51,18 @@
   "homepage": "https://github.com/mljs/distance",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.20.7",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/jest": "^29.2.4",
+    "cheminfo-types": "^1.4.0",
     "eslint": "^8.30.0",
-    "eslint-config-cheminfo": "^8.1.3",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^27.1.7",
+    "eslint-config-cheminfo-typescript": "^11.2.2",
     "esm": "^3.2.25",
     "jest": "^29.3.1",
     "prettier": "^2.8.1",
-    "rollup": "^3.8.1"
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.4"
   },
   "dependencies": {
-    "cheminfo-types": "^1.4.0",
     "ml-array-mean": "^1.1.6",
     "ml-distance-euclidean": "^2.0.0",
     "ml-tree-similarity": "^1.0.0"
