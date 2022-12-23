@@ -1,14 +1,14 @@
 import { distance } from '../..';
 
-var v1 = [0.2, 0.4, 0.3, 0.1];
-var v2 = [0.3, 0.2, 0.3, 0.2];
+let v1 = [0.2, 0.4, 0.3, 0.1];
+let v2 = [0.3, 0.2, 0.3, 0.2];
 
-describe('Motyka distance', function () {
-  it('should return 0.5 with itself', function () {
+describe('Motyka distance', () => {
+  it('should return 0.5 with itself', () => {
     expect(distance.motyka(v1, v1)).toBe(0.5);
   });
 
-  it('should be correct', function () {
+  it('should be correct', () => {
     expect(distance.motyka(v1, v2)).toBe(0.6000000000000001);
   });
 });

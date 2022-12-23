@@ -1,7 +1,7 @@
 export default function manhattan(a, b) {
-  var i = 0;
-  var ii = a.length;
-  var d = 0;
+  let i = 0;
+  let ii = a.length;
+  let d = 0;
   for (; i < ii; i++) {
     d += Math.abs(a[i] - b[i]);
   }

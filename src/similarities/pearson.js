@@ -3,12 +3,12 @@ import mean from 'ml-array-mean';
 import cosine from './cosine';
 
 export default function pearson(a, b) {
-  var avgA = mean(a);
-  var avgB = mean(b);
+  let avgA = mean(a);
+  let avgB = mean(b);
 
-  var newA = new Array(a.length);
-  var newB = new Array(b.length);
-  for (var i = 0; i < newA.length; i++) {
+  let newA = new Array(a.length);
+  let newB = new Array(b.length);
+  for (let i = 0; i < newA.length; i++) {
     newA[i] = a[i] - avgA;
     newB[i] = b[i] - avgB;
   }

@@ -1,7 +1,7 @@
 export default function minkowski(a, b, p) {
-  var i = 0;
-  var ii = a.length;
-  var d = 0;
+  let i = 0;
+  let ii = a.length;
+  let d = 0;
   for (; i < ii; i++) {
     d += Math.pow(Math.abs(a[i] - b[i]), p);
   }
