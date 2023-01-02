@@ -8,5 +8,9 @@
     "strict": true,
     "target": "es2020"
   },
-  "include": ["./src/**/*"]
+  "include": ["./src/**/*"],
+  "typedocOptions": {
+    "entryPoints": ["src/index.ts"],
+    "out": "docs"
+  }
 }
