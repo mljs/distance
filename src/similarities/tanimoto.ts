@@ -1,5 +1,12 @@
 import { NumberArray } from 'cheminfo-types';
-
+/**
+ *Returns the Tanimoto similarity  between vectors p and q, and accepts the bitVector use, see the test case for an example
+ * @link [Tanimoto similarity algorithm](https://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)
+ * @param {NumberArray} a - first vector
+ * @param {NumberArray} b - second vector
+ * @param {boolean} bitvector - bitVector
+ * @returns {number}
+ */
 export default function tanimoto(
   a: NumberArray,
   b: NumberArray,

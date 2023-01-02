@@ -1,5 +1,12 @@
 import { NumberArray } from 'cheminfo-types';
 
+/**
+ *Returns the Chebyshev distance between vectors a and b
+ * @link [Chebyshev algorithm](https://en.wikipedia.org/wiki/Chebyshev_distance)
+ * @param {NumberArray} a - first vector
+ * @param {NumberArray} b - second vector
+ * @returns {number}
+ */
 export default function chebyshev(a: NumberArray, b: NumberArray): number {
   let max = 0;
   let aux = 0;

@@ -1,5 +1,11 @@
 import { NumberArray } from 'cheminfo-types';
-
+/**
+ *Returns the Jensen difference distance between vectors a and b
+ * @link [Jensen difference algorithm](https://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)
+ * @param {NumberArray} a - first vector
+ * @param {NumberArray} b - second vector
+ * @returns {number}
+ */
 export default function jensenDifference(
   a: NumberArray,
   b: NumberArray,

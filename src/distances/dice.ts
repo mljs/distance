@@ -1,5 +1,11 @@
 import { NumberArray } from 'cheminfo-types';
-
+/**
+ *Returns the Dice distance between vectors a and b
+ * @link [Dice algorithm](https://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)
+ * @param {NumberArray} a - first vector
+ * @param {NumberArray} b - second vector
+ * @returns {number}
+ */
 export default function dice(a: NumberArray, b: NumberArray): number {
   let a2 = 0;
   let b2 = 0;

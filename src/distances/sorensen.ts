@@ -1,5 +1,12 @@
 import { NumberArray } from 'cheminfo-types';
 
+/**
+ *Returns the Sorensen distance between vectors a and b
+ * @link [Sorensen algorithm](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient)
+ * @param {NumberArray} a - first vector
+ * @param {NumberArray} b - second vector
+ * @returns {number}
+ */
 export default function sorensen(a: NumberArray, b: NumberArray): number {
   let up = 0;
   let down = 0;
