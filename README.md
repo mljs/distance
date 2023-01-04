@@ -238,9 +238,7 @@ $$d(p,q)=\sum\limits_{i=1}^{n}{\left((p_i-q_i)\ln\frac{p_i}{q_i}\right)}$$
 
 Returns the [K divergence distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
-<span>
-
-$$d(p,q)=\sum\limits_{i=1}^{n}{\left(p_i\cdot\ln\frac{2p_i}{p_i+q_i}\right)}$$</span>
+$$d(p,q)=\sum\limits_{i=1}^{n}{\left(p_i\cdot\ln\frac{2p_i}{p_i+q_i}\right)}$$
 
 - `topsoe(p, q)`
 

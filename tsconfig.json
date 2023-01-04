@@ -11,6 +11,12 @@
   "include": ["./src/**/*"],
   "typedocOptions": {
     "entryPoints": ["src/index.ts"],
-    "out": "docs"
+    "out": "docs",
+    "katex": {
+      "options": {
+        "fleqn": "true",
+        "leqno": "false"
+      }
+    }
   }
 }
