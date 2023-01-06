@@ -138,7 +138,7 @@ Returns the [Jaccard distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf
 
 $d(p,q)=1-\frac{\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}}{\sum\limits_{i=1}^{n}{p_i^2}+\sum\limits_{i=1}^{n}{q_i^2}-\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}}$
 
-- `dice(p, q)`
+- `dice(p,q)`
 
 Returns the [Dice distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
