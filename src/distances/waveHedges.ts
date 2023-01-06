@@ -4,7 +4,7 @@ import { NumberArray } from 'cheminfo-types';
  * @link [Wave Hedges algorithm](https://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)
  * @param a - first vector
  * @param b - second vector
- * @param {boolean} bitvector - bitVector
+ * @param bitvector - bitVector
  *
  */
 export default function waveHedges(a: NumberArray, b: NumberArray): number {

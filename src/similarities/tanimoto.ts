@@ -4,7 +4,7 @@ import { NumberArray } from 'cheminfo-types';
  * @link [Tanimoto similarity algorithm](https://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)
  * @param a - first vector
  * @param b - second vector
- * @param {boolean} bitvector - bitVector
+ * @param bitvector - bitVector
  *
  */
 export default function tanimoto(

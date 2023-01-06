@@ -4,7 +4,7 @@ import { NumberArray } from 'cheminfo-types';
  * @link [Minkowski algorithm](https://en.wikipedia.org/wiki/Minkowski_distance)
  * @param a - first vector
  * @param b - second vector
- * @param {number} p - number of order
+ * @param p - number of order
  *
  */
 export default function minkowski(a: NumberArray, b: NumberArray, p: number) {
