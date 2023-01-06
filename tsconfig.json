@@ -8,16 +8,5 @@
     "strict": true,
     "target": "es2020"
   },
-  "include": ["./src/**/*"],
-  "typedocOptions": {
-    "entryPoints": ["src/index.ts"],
-    "out": "docs",
-    "katex": {
-      "options": {
-        "delimiters": [{ "left": "$", "right": "$", "display": true }],
-        "fleqn": "true",
-        "leqno": "false"
-      }
-    }
-  }
+  "include": ["./src/**/*"]
 }
