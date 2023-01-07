@@ -1,0 +1,302 @@
+<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>ml-distance</title><meta name="description" content="Documentation for ml-distance"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"/><script src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script><script>
+					window.__typeDocPluginKatexOptions={"delimiters":[{"left":"$","right":"$","display":true}],"fleqn":"true","leqno":"false"};
+					window.addEventListener('load', () => window.renderMathInElement(document.body, window.__typeDocPluginKatexOptions));
+				</script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">ml-distance</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1>ml-distance</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#ml-distance" id="ml-distance" style="color: inherit; text-decoration: none;">
+  <h1>ml-distance</h1>
+</a>
+<p><a href="https://npmjs.org/package/ml-distance"><img src="https://img.shields.io/npm/v/ml-distance.svg?style=flat-square" alt="NPM version"></a>
+<a href="https://travis-ci.org/mljs/distance"><img src="https://img.shields.io/travis/mljs/distance/master.svg?style=flat-square" alt="build status"></a>
+<a href="https://npmjs.org/package/ml-distance"><img src="https://img.shields.io/npm/dm/ml-distance.svg?style=flat-square" alt="npm download"></a></p>
+<p>Distance functions to compare vectors.</p>
+
+<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+  <h2>Installation</h2>
+</a>
+<p><code>$ npm i ml-distance</code></p>
+
+<a href="#methods" id="methods" style="color: inherit; text-decoration: none;">
+  <h2>Methods</h2>
+</a>
+
+<a href="#distances" id="distances" style="color: inherit; text-decoration: none;">
+  <h3>Distances</h3>
+</a>
+<ul>
+<li><code>euclidean(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://en.wikipedia.org/wiki/Euclidean_distance#n_dimensions">euclidean distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sqrt{\sum\limits_{i=1}^{n}(p_i-q_i)^2}$</p>
+<ul>
+<li><code>manhattan(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://en.wikipedia.org/wiki/Taxicab_geometry">city block distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}{\left|p_i-q_i\right|}$</p>
+<ul>
+<li><code>minkowski(p, q, d)</code></li>
+</ul>
+<p>Returns the <a href="http://en.wikipedia.org/wiki/Minkowski_distance">Minkowski distance</a> between vectors p and q for order d</p>
+<ul>
+<li><code>chebyshev(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://en.wikipedia.org/wiki/Chebyshev_distance">Chebyshev distance</a> between vectors p and q</p>
+<p>$d(p,q)=\max\limits_i(|p_i-q_i|)$</p>
+<ul>
+<li><code>sorensen(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient">Sørensen distance</a> between vectors p and q</p>
+<p>$d(p,q)=\frac{\sum\limits_{i=1}^{n}{\left|p_i-q_i\right|}}{\sum\limits_{i=1}^{n}{p_i+q_i}}$</p>
+<ul>
+<li><code>gower(p, q)</code></li>
+</ul>
+<p>Returns the <a href="https://stat.ethz.ch/education/semesters/ss2012/ams/slides/v4.2.pdf">Gower distance</a> between vectors p and q</p>
+<p>$d(p,q)=\frac{\sum\limits_{i=1}^{n}{\left|p_i-q_i\right|}}{n}$</p>
+<ul>
+<li><code>soergel(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.orgchm.bas.bg/~vmonev/SimSearch.pdf">Soergel distance</a> between vectors p and q</p>
+<p>$d(p,q)=\frac{\sum\limits_{i=1}^{n}{\left|p_i-q_i\right|}}{max(p_i,q_i)}$</p>
+<ul>
+<li><code>kulczynski(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Kulczynski distance</a> between vectors p and q</p>
+<p>$d(p,q)=\frac{\sum\limits_{i=1}^{n}{\left|p_i-q_i\right|}}{min(p_i,q_i)}$</p>
+<ul>
+<li><code>canberra(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://en.wikipedia.org/wiki/Canberra_distance">Canberra distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}\frac{\left|{p_i-q_i}\right|}{p_i+q_i}$</p>
+<ul>
+<li><code>lorentzian(p, q)</code></li>
+</ul>
+<p>Returns the <a href="https://stat.ethz.ch/education/semesters/ss2012/ams/slides/v4.2.pdf">Lorentzian distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}\ln(\left|{p_i-q_i}\right|+1)$</p>
+<ul>
+<li><code>intersection(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Intersection distance</a> between vectors p and q</p>
+<p>$d(p,q)=1-\sum\limits_{i=1}^{n}min(p_i,q_i)$</p>
+<ul>
+<li><code>waveHedges(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Wave Hedges distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}\left(1-\frac{min(p_i,q_i)}{max(p_i,q_i)}\right)$</p>
+<ul>
+<li><code>czekanowski(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Czekanowski distance</a> between vectors p and q</p>
+<p>$d(p,q)=1-\frac{2\sum\limits_{i=1}^{n}{min(p_i,q_i)}}{\sum\limits_{i=1}^{n}{p_i+q_i}}$</p>
+<ul>
+<li><code>motyka(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Motyka distance</a> between vectors p and q</p>
+<p>$d(p,q)=1-\frac{\sum\limits_{i=1}^{n}{min(p_i,q_i)}}{\sum\limits_{i=1}^{n}{p_i+q_i}}$</p>
+<p>Note: distance between 2 identical vectors is 0.5 !</p>
+<ul>
+<li><code>ruzicka(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Ruzicka similarity</a> between vectors p and q</p>
+<p>$d(p,q)=\frac{\sum\limits_{i=1}^{n}{max(p_i,q_i)}}{\sum\limits_{i=1}^{n}{min(p_i,q_i)}}$</p>
+<ul>
+<li><code>tanimoto(p, q, [bitVector])</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Tanimoto distance</a> between vectors p and q, and accepts the bitVector use, see the test case for an example</p>
+<ul>
+<li><code>innerProduct(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Inner Product similarity</a> between vectors p and q</p>
+<p>$s(p,q)=\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}$</p>
+<ul>
+<li><code>harmonicMean(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Harmonic mean similarity</a> between vectors p and q</p>
+<p>$d(p,q)=2\sum\limits_{i=1}^{n}\frac{p_i\cdot{q_i}}{p_i+q_i}$</p>
+<ul>
+<li><code>cosine(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Cosine similarity</a> between vectors p and q</p>
+<p>$d(p,q)=\frac{\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}}{\sum\limits_{i=1}^{n}{p_i^2}\sum\limits_{i=1}^{n}{q_i^2}}$</p>
+<ul>
+<li><code>kumarHassebrook(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Kumar-Hassebrook similarity</a> between vectors p and q</p>
+<p>$d(p,q)=\frac{\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}}{\sum\limits_{i=1}^{n}{p_i^2}+\sum\limits_{i=1}^{n}{q_i^2}-\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}}$</p>
+<ul>
+<li><code>jaccard(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Jaccard distance</a> between vectors p and q</p>
+<p>$d(p,q)=1-\frac{\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}}{\sum\limits_{i=1}^{n}{p_i^2}+\sum\limits_{i=1}^{n}{q_i^2}-\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}}$</p>
+<ul>
+<li><code>dice(p,q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Dice distance</a> between vectors p and q</p>
+<p>$d(p,q)=1-\frac{\sum\limits_{i=1}^{n}{(p_i-q_i)^2}}{\sum\limits_{i=1}^{n}{p_i^2}+\sum\limits_{i=1}^{n}{q_i^2}}$</p>
+<ul>
+<li><code>fidelity(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Fidelity similarity</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}{\sqrt{p_i\cdot{q_i}}}$</p>
+<ul>
+<li><code>bhattacharyya(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Bhattacharyya distance</a> between vectors p and q</p>
+<p>$d(p,q)=-\ln\left(\sum\limits_{i=1}^{n}{\sqrt{p_i\cdot{q_i}}}\right)$</p>
+<ul>
+<li><code>hellinger(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Hellinger distance</a> between vectors p and q</p>
+<p>$d(p,q)=2\cdot\sqrt{1-\sum\limits_{i=1}^{n}{\sqrt{p_i\cdot{q_i}}}}$</p>
+<ul>
+<li><code>matusita(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Matusita distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sqrt{2-2\cdot\sum\limits_{i=1}^{n}{\sqrt{p_i\cdot{q_i}}}}$</p>
+<ul>
+<li><code>squaredChord(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Squared-chord distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}{(\sqrt{p_i}-\sqrt{q_i})^2}$</p>
+<ul>
+<li><code>squaredEuclidean(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://en.wikipedia.org/wiki/Euclidean_distance#Squared_Euclidean_distance">squared euclidean distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}{(p_i-q_i)^2}$</p>
+<ul>
+<li><code>pearson(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Pearson distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}{\frac{(p_i-q_i)^2}{q_i}}$</p>
+<ul>
+<li><code>neyman(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Neyman distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}{\frac{(p_i-q_i)^2}{p_i}}$</p>
+<ul>
+<li><code>squared(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Squared distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}{\frac{(p_i-q_i)^2}{p_i+q_i}}$</p>
+<ul>
+<li><code>probabilisticSymmetric(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Probabilistic Symmetric distance</a> between vectors p and q</p>
+<p>$d(p,q)=2\cdot\sum\limits_{i=1}^{n}{\frac{(p_i-q_i)^2}{p_i+q_i}}$</p>
+<ul>
+<li><code>divergence(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Divergence distance</a> between vectors p and q</p>
+<p>$d(p,q)=2\cdot\sum\limits_{i=1}^{n}{\frac{(p_i-q_i)^2}{(p_i+q_i)^2}}$</p>
+<ul>
+<li><code>clark(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Clark distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sqrt{\sum\limits_{i=1}^{n}{\left(\frac{\left|p_i-q_i\right|}{(p_i+q_i)}\right)^2}}$</p>
+<ul>
+<li><code>additiveSymmetric(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Additive Symmetric distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}{\frac{(p_i-q_i)^2\cdot(p_i+q_i)}{p_i\cdot{q_i}}}$</p>
+<ul>
+<li><code>kullbackLeibler(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Kullback-Leibler distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}{p_i\cdot\ln\frac{p_i}{q_i}}$</p>
+<ul>
+<li><code>jeffreys(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Jeffreys distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}{\left((p_i-q_i)\ln\frac{p_i}{q_i}\right)}$</p>
+<ul>
+<li><code>kdivergence(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">K divergence distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}{\left(p_i\cdot\ln\frac{2p_i}{p_i+q_i}\right)}$</p>
+<ul>
+<li><code>topsoe(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Topsøe distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}{\left(p_i\cdot\ln\frac{2p_i}{p_i+q_i}+q_i\cdot\ln\frac{2q_i}{p_i+q_i}\right)}$</p>
+<ul>
+<li><code>jensenShannon(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Jensen-Shannon distance</a> between vectors p and q</p>
+<p>$d(p,q)=\frac{1}{2}\left[\sum\limits_{i=1}^{n}{p_i\cdot\ln\frac{2p_i}{p_i+q_i}}+\sum\limits_{i=1}^{n}{q_i\cdot\ln\frac{2q_i}{p_i+q_i}}\right]$</p>
+<ul>
+<li><code>jensenDifference(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Jensen difference distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}{\left[\frac{p_i\ln{p_i}+q_i\ln{q_i}}{2}-\left(\frac{p_i+q_i}{2}\right)\ln\left(\frac{p_i+q_i}{2}\right)\right]}$</p>
+<ul>
+<li><code>taneja(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Taneja distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}{\left[\frac{p_i+q_i}{2}\ln\left(\frac{p_i+q_i}{2\sqrt{p_i\cdot{q_i}}}\right)\right]}$</p>
+<ul>
+<li><code>kumarJohnson(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Kumar-Johnson distance</a> between vectors p and q</p>
+<p>$d(p,q)=\sum\limits_{i=1}^{n}{\frac{\left(p_i^2-q_i^2\right)^2}{2(p_i\cdot{q_i})^{3/2}}}$</p>
+<ul>
+<li><code>avg(p, q)</code></li>
+</ul>
+<p>Returns the average of city block and Chebyshev distances between vectors p and q</p>
+<p>$d(p,q)=\frac{\sum\limits_{i=1}^{n}{\left|p_i-q_i\right|}+\max\limits_i(|p_i-q_i|)}{2}$</p>
+
+<a href="#similarities" id="similarities" style="color: inherit; text-decoration: none;">
+  <h3>Similarities</h3>
+</a>
+<ul>
+<li><code>intersection(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Intersection similarity</a> between vectors p and q</p>
+<ul>
+<li><code>czekanowski(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Czekanowski similarity</a> between vectors p and q</p>
+<ul>
+<li><code>motyka(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Motyka similarity</a> between vectors p and q</p>
+<ul>
+<li><code>kulczynski(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Kulczynski similarity</a> between vectors p and q</p>
+<ul>
+<li><code>squaredChord(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Squared-chord similarity</a> between vectors p and q</p>
+<ul>
+<li><code>jaccard(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Jaccard similarity</a> between vectors p and q</p>
+<ul>
+<li><code>dice(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Dice similarity</a> between vectors p and q</p>
+<ul>
+<li><code>tanimoto(p, q, [bitVector])</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Tanimoto similarity</a> between vectors p and q, and accepts the bitVector use, see the test case for an example</p>
+<ul>
+<li><code>tree(a,b, from, to, [options])</code></li>
+</ul>
+<p>Refer to <a href="https://github.com/mljs/tree-similarity">ml-tree-similarity</a></p>
+
+<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+  <h2>Contributing</h2>
+</a>
+<p>A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file in test/dist.<br>The metric should be then added in the exports of src/index.js with a relatively small but understandable name (use camelCase).<br>It should also be added to this README with either a link to the formula or an inline description.</p>
+
+<a href="#authors" id="authors" style="color: inherit; text-decoration: none;">
+  <h2>Authors</h2>
+</a>
+<ul>
+<li><a href="https://github.com/targos">Michaël Zasso</a></li>
+<li><a href="https://github.com/maasencioh">Miguel Angel Asencio Hurtado</a></li>
+</ul>
+
+<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+  <h2>License</h2>
+</a>
+<p><a href="./LICENSE">MIT</a></p>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li><li class=" tsd-kind-namespace"><a href="modules/distance.html">distance</a></li><li class=" tsd-kind-namespace"><a href="modules/similarity.html">similarity</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul></ul></nav></div></div></div><footer class=""><div class="container"><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="overlay"></div><script src="assets/main.js"></script></body></html>
