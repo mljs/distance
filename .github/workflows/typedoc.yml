@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build documentation
-        uses: zakodium/typedoc-action@feat-katex
+        uses: zakodium/typedoc-action@v2
         with:
           entry: src/index.ts
 
