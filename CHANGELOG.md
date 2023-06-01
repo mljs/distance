@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.1](https://github.com/mljs/distance/compare/v4.0.0...v4.0.1) (2023-06-01)
+
+
+### Bug Fixes
+
+* correct exported types in similarities ([#15](https://github.com/mljs/distance/issues/15)) ([ad95f92](https://github.com/mljs/distance/commit/ad95f92432d9fab42798a58bcd101a66aedc7dfe))
+
 ## [4.0.0](https://github.com/mljs/distance/compare/v3.0.0...v4.0.0) (2023-01-06)
 
 
