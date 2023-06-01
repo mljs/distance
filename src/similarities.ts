@@ -1,3 +1,4 @@
+// @ts-expect-error ml-tree-similarity is not typed
 import * as tree from 'ml-tree-similarity';
 
 export { tree };
