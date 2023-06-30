@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.2](https://github.com/mljs/distance/compare/v4.0.1...v4.0.2) (2023-06-30)
+
+
+### Documentation
+
+* add Zakodium maintainer ([0b15acd](https://github.com/mljs/distance/commit/0b15acd6476413f4111cb4852ca1bec9edaa2805))
+
 ## [4.0.1](https://github.com/mljs/distance/compare/v4.0.0...v4.0.1) (2023-06-01)
 
 
