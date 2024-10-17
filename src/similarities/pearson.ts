@@ -1,9 +1,9 @@
 import { NumberArray } from 'cheminfo-types';
 import mean from 'ml-array-mean';
 
-import cosine from './cosine';
+import { cosine } from './cosine';
 
-export default function pearson(a: NumberArray, b: NumberArray): number {
+export function pearson(a: NumberArray, b: NumberArray): number {
   const avgA = mean(a);
   const avgB = mean(b);
 

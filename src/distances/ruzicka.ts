@@ -5,7 +5,7 @@ import { NumberArray } from 'cheminfo-types';
  * @param a - first vector
  * @param b - second vector
  */
-export default function ruzicka(a: NumberArray, b: NumberArray): number {
+export function ruzicka(a: NumberArray, b: NumberArray): number {
   let up = 0;
   let down = 0;
   for (let i = 0; i < a.length; i++) {

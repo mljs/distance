@@ -5,7 +5,7 @@ import { NumberArray } from 'cheminfo-types';
  * @param a - first vector
  * @param b - second vector
  */
-export default function gower(a: NumberArray, b: NumberArray): number {
+export function gower(a: NumberArray, b: NumberArray): number {
   const ii = a.length;
   let ans = 0;
   for (let i = 0; i < a.length; i++) {

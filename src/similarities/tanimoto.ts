@@ -6,7 +6,7 @@ import { NumberArray } from 'cheminfo-types';
  * @param b - second vector
  * @param bitvector - bitVector
  */
-export default function tanimoto(
+export function tanimoto(
   a: NumberArray,
   b: NumberArray,
   bitvector?: boolean,

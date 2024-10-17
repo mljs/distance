@@ -4,7 +4,7 @@ import { NumberArray } from 'cheminfo-types';
  * @param a - first vector
  * @param b - second vector
  */
-export default function cosine(a: NumberArray, b: NumberArray): number {
+export function cosine(a: NumberArray, b: NumberArray): number {
   let p = 0;
   let p2 = 0;
   let q2 = 0;

@@ -1,22 +1,22 @@
-export { default as cosine } from './similarities/cosine';
+export * from './similarities/cosine';
 
-export { default as czekanowski } from './similarities/czekanowski';
+export * from './similarities/czekanowski';
 
-export { default as dice } from './similarities/dice';
+export * from './similarities/dice';
 
-export { default as intersection } from './similarities/intersection';
+export * from './similarities/intersection';
 
-export { default as kulczynski } from './similarities/kulczynski';
+export * from './similarities/kulczynski';
 
-export { default as motyka } from './similarities/motyka';
+export * from './similarities/motyka';
 
-export { default as pearson } from './similarities/pearson';
+export * from './similarities/pearson';
 
-export { default as squaredChord } from './similarities/squaredChord';
+export * from './similarities/squaredChord';
 
-export { default as tanimoto } from './similarities/tanimoto';
+export * from './similarities/tanimoto';
 
-export { default as kumarHassebrook } from './similarities/kumarHassebrook';
+export * from './similarities/kumarHassebrook';
 
 // @ts-expect-error ml-tree-similarity is not typed
 export * as tree from 'ml-tree-similarity';

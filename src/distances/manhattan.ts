@@ -6,7 +6,7 @@ import { NumberArray } from 'cheminfo-types';
  * @param b - second vector
  */
 
-export default function manhattan(a: NumberArray, b: NumberArray): number {
+export function manhattan(a: NumberArray, b: NumberArray): number {
   let d = 0;
   for (let i = 0; i < a.length; i++) {
     d += Math.abs(a[i] - b[i]);

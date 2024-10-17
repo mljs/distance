@@ -6,7 +6,7 @@ import { NumberArray } from 'cheminfo-types';
  * @param a - first vector
  * @param b - second vector
  */
-export default function chebyshev(a: NumberArray, b: NumberArray): number {
+export function chebyshev(a: NumberArray, b: NumberArray): number {
   let max = 0;
   let aux = 0;
   for (let i = 0; i < a.length; i++) {
