@@ -343,7 +343,7 @@ It should also be added to this README with either a link to the formula or an i
 
 [npm-image]: https://img.shields.io/npm/v/ml-distance.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/ml-distance
-[travis-image]: https://img.shields.io/travis/mljs/distance/master.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/mljs/distance/main.svg?style=flat-square
 [travis-url]: https://travis-ci.org/mljs/distance
 [download-image]: https://img.shields.io/npm/dm/ml-distance.svg?style=flat-square
 [download-url]: https://npmjs.org/package/ml-distance
