@@ -1,7 +1,9 @@
+import { describe, it, expect } from 'vitest';
+
 import { distance } from '../..';
 
-let v1 = [0, 1, 4, 6, 2];
-let v2 = [3, 6, 9, 4, 3];
+const v1 = [0, 1, 4, 6, 2];
+const v2 = [3, 6, 9, 4, 3];
 
 describe('Soergel distance', () => {
   it('should return 0 with itself', () => {

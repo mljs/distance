@@ -1,4 +1,2 @@
-import * as distance from './distances';
-import * as similarity from './similarities';
-
-export { distance, similarity };
+export * as distance from './distances';
+export * as similarity from './similarities';

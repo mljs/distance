@@ -5,7 +5,6 @@ import { NumberArray } from 'cheminfo-types';
  * @link [Chebyshev algorithm](https://en.wikipedia.org/wiki/Chebyshev_distance)
  * @param a - first vector
  * @param b - second vector
- *
  */
 export default function chebyshev(a: NumberArray, b: NumberArray): number {
   let max = 0;

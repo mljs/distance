@@ -5,7 +5,6 @@ import { NumberArray } from 'cheminfo-types';
  * @link [Soergel algorithm](https://www.orgchm.bas.bg/)
  * @param a - first vector
  * @param b - second vector
- *
  */
 export default function soergel(a: NumberArray, b: NumberArray): number {
   let up = 0;

@@ -5,7 +5,6 @@ import { NumberArray } from 'cheminfo-types';
  * @param a - first vector
  * @param b - second vector
  * @param bitvector - bitVector
- *
  */
 export default function waveHedges(a: NumberArray, b: NumberArray): number {
   let ans = 0;

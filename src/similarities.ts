@@ -1,8 +1,3 @@
-// @ts-expect-error ml-tree-similarity is not typed
-import * as tree from 'ml-tree-similarity';
-
-export { tree };
-
 export { default as cosine } from './similarities/cosine';
 
 export { default as czekanowski } from './similarities/czekanowski';
@@ -22,3 +17,6 @@ export { default as squaredChord } from './similarities/squaredChord';
 export { default as tanimoto } from './similarities/tanimoto';
 
 export { default as kumarHassebrook } from './similarities/kumarHassebrook';
+
+// @ts-expect-error ml-tree-similarity is not typed
+export * as tree from 'ml-tree-similarity';

@@ -1,7 +1,9 @@
+import { describe, it, expect } from 'vitest';
+
 import { distance } from '../..';
 
-let v1 = [0.2, 0.4, 0.3, 0.1];
-let v2 = [0.3, 0.2, 0.3, 0.2];
+const v1 = [0.2, 0.4, 0.3, 0.1];
+const v2 = [0.3, 0.2, 0.3, 0.2];
 
 describe('K divergence distance', () => {
   it('should be correct', () => {

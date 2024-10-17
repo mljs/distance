@@ -5,7 +5,6 @@ import { NumberArray } from 'cheminfo-types';
  * @param a - first vector
  * @param b - second vector
  * @param p - number of order
- *
  */
 export default function minkowski(a: NumberArray, b: NumberArray, p: number) {
   let d = 0;

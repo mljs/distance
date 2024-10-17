@@ -4,7 +4,6 @@ import { NumberArray } from 'cheminfo-types';
  * @link [Lorentzian algorithm](https://stat.ethz.ch/education/semesters/ss2012/ams/slides/v4.2.pdf)
  * @param a - first vector
  * @param b - second vector
- *
  */
 export default function lorentzian(a: NumberArray, b: NumberArray): number {
   let ans = 0;

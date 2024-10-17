@@ -1,7 +1,9 @@
+import { describe, it, expect } from 'vitest';
+
 import { similarity } from '../..';
 
-let v1 = [0, 1, 2, 3];
-let v2 = [0, 1, 2, 1];
+const v1 = [0, 1, 2, 3];
+const v2 = [0, 1, 2, 1];
 
 describe('Pearson correlation', () => {
   it('should be correct', () => {

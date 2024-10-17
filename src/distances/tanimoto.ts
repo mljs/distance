@@ -7,7 +7,6 @@ import tanimotoS from '../similarities/tanimoto';
  * @param a - first vector
  * @param b - second vector
  * @param bitvector - bitVector
- *
  */
 export default function tanimoto(
   a: NumberArray,

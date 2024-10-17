@@ -1,10 +1,12 @@
+import { describe, it, expect } from 'vitest';
+
 import { similarity } from '../..';
 
-let a = [
+const a = [
   [1, 2, 3, 4, 5, 6, 7],
   [0.3, 0.7, 4, 0.3, 0.2, 5, 0.3],
 ];
-let b = [
+const b = [
   [1, 2, 3, 4, 5, 6, 7],
   [0.3, 4, 0.7, 0.3, 5, 0.2, 0.3],
 ];

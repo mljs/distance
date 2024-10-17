@@ -4,7 +4,6 @@ import { NumberArray } from 'cheminfo-types';
  * @link [Canberra algorithm](https://en.wikipedia.org/wiki/Canberra_distance)
  * @param a - first vector
  * @param b - second vector
- *
  */
 export default function canberra(a: NumberArray, b: NumberArray): number {
   let ans = 0;

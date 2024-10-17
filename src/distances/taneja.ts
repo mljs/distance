@@ -4,7 +4,6 @@ import { NumberArray } from 'cheminfo-types';
  * @link [Taneja algorithm](https://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)
  * @param a - first vector
  * @param b - second vector
- *
  */
 export default function taneja(a: NumberArray, b: NumberArray): number {
   let ans = 0;
