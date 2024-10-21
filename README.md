@@ -11,7 +11,8 @@
   </p>
   
 [![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
+[![Node.js CI](https://github.com/mljs/distance/actions/workflows/nodejs.yml/badge.svg)](https://github.com/mljs/distance/actions/workflows/nodejs.yml)
+[![Test coverage][codecov-image]][codecov-url]
 [![npm download][download-image]][download-url]
   
 </h3>
@@ -343,7 +344,7 @@ It should also be added to this README with either a link to the formula or an i
 
 [npm-image]: https://img.shields.io/npm/v/ml-distance.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/ml-distance
-[travis-image]: https://img.shields.io/travis/mljs/distance/main.svg?style=flat-square
-[travis-url]: https://travis-ci.org/mljs/distance
+[codecov-image]: https://img.shields.io/codecov/c/github/mljs/distance.svg
+[codecov-url]: https://codecov.io/gh/mljs/distance
 [download-image]: https://img.shields.io/npm/dm/ml-distance.svg?style=flat-square
 [download-url]: https://npmjs.org/package/ml-distance
