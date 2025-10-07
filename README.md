@@ -137,7 +137,7 @@ $d(p,q)=2\sum\limits_{i=1}^{n}\frac{p_i\cdot{q_i}}{p_i+q_i}$
 
 Returns the [Cosine similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
-$d(p,q)=\frac{\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}}{\sum\limits_{i=1}^{n}{p_i^2}\sum\limits_{i=1}^{n}{q_i^2}}$
+$d(p,q)=\frac{\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}}{\sqrt{\sum\limits_{i=1}^{n}{p_i^2}}\sqrt{\sum\limits_{i=1}^{n}{q_i^2}}}$
 
 - `kumarHassebrook(p, q)`
 
