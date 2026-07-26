@@ -1,81 +1,81 @@
 export * from 'ml-distance-euclidean';
 
-export * from './distances/additiveSymmetric';
+export * from './distances/additiveSymmetric.ts';
 
-export * from './distances/avg';
+export * from './distances/avg.ts';
 
-export * from './distances/bhattacharyya';
+export * from './distances/bhattacharyya.ts';
 
-export * from './distances/canberra';
+export * from './distances/canberra.ts';
 
-export * from './distances/chebyshev';
+export * from './distances/chebyshev.ts';
 
-export * from './distances/clark';
+export * from './distances/clark.ts';
 
-export * from './distances/czekanowski';
+export * from './distances/czekanowski.ts';
 
-export * from './distances/dice';
+export * from './distances/dice.ts';
 
-export * from './distances/divergence';
+export * from './distances/divergence.ts';
 
-export * from './distances/fidelity';
+export * from './distances/fidelity.ts';
 
-export * from './distances/gower';
+export * from './distances/gower.ts';
 
-export * from './distances/harmonicMean';
+export * from './distances/harmonicMean.ts';
 
-export * from './distances/hellinger';
+export * from './distances/hellinger.ts';
 
-export * from './distances/innerProduct';
+export * from './distances/innerProduct.ts';
 
-export * from './distances/intersection';
+export * from './distances/intersection.ts';
 
-export * from './distances/jaccard';
+export * from './distances/jaccard.ts';
 
-export * from './distances/jeffreys';
+export * from './distances/jeffreys.ts';
 
-export * from './distances/jensenDifference';
+export * from './distances/jensenDifference.ts';
 
-export * from './distances/jensenShannon';
+export * from './distances/jensenShannon.ts';
 
-export * from './distances/kdivergence';
+export * from './distances/kdivergence.ts';
 
-export * from './distances/kulczynski';
+export * from './distances/kulczynski.ts';
 
-export * from './distances/kullbackLeibler';
+export * from './distances/kullbackLeibler.ts';
 
-export * from './distances/kumarJohnson';
+export * from './distances/kumarJohnson.ts';
 
-export * from './distances/lorentzian';
+export * from './distances/lorentzian.ts';
 
-export * from './distances/manhattan';
+export * from './distances/manhattan.ts';
 
-export * from './distances/matusita';
+export * from './distances/matusita.ts';
 
-export * from './distances/minkowski';
+export * from './distances/minkowski.ts';
 
-export * from './distances/motyka';
+export * from './distances/motyka.ts';
 
-export * from './distances/neyman';
+export * from './distances/neyman.ts';
 
-export * from './distances/pearson';
+export * from './distances/pearson.ts';
 
-export * from './distances/probabilisticSymmetric';
+export * from './distances/probabilisticSymmetric.ts';
 
-export * from './distances/ruzicka';
+export * from './distances/ruzicka.ts';
 
-export * from './distances/soergel';
+export * from './distances/soergel.ts';
 
-export * from './distances/sorensen';
+export * from './distances/sorensen.ts';
 
-export * from './distances/squared';
+export * from './distances/squared.ts';
 
-export * from './distances/squaredChord';
+export * from './distances/squaredChord.ts';
 
-export * from './distances/taneja';
+export * from './distances/taneja.ts';
 
-export * from './distances/tanimoto';
+export * from './distances/tanimoto.ts';
 
-export * from './distances/topsoe';
+export * from './distances/topsoe.ts';
 
-export * from './distances/waveHedges';
+export * from './distances/waveHedges.ts';

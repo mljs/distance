@@ -1,6 +1,6 @@
-import { NumberArray } from 'cheminfo-types';
+import type { NumberArray } from 'cheminfo-types';
 /**
- * Returns the average of cosine distances between vectors a and b
+ * Returns the cosine similarity between vectors a and b
  * @param a - first vector
  * @param b - second vector
  */

@@ -1,6 +1,6 @@
-import { NumberArray } from 'cheminfo-types';
+import type { NumberArray } from 'cheminfo-types';
 
-import { motyka as motykaD } from '../distances/motyka';
+import { motyka as motykaD } from '../distances/motyka.ts';
 /**
  *Returns the Motyka similarity between vectors a and b
  * @link [Motyka algorithm](https://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)

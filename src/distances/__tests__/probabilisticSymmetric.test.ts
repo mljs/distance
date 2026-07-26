@@ -1,19 +1,17 @@
-import { describe, it, expect } from 'vitest';
+import { expect, test } from 'vitest';
 
-import { distance } from '../..';
+import { distance } from '../../index.ts';
 
 const v1 = [3, 1, 4, 6, 2];
 const v2 = [3, 6, 9, 4, 3];
 
-describe('Probabilistic Symmetric distance', () => {
-  it('should return 0 with itself', () => {
-    expect(distance.probabilisticSymmetric(v1, v1)).toBe(0);
-  });
+test('should return 0 with itself', () => {
+  expect(distance.probabilisticSymmetric(v1, v1)).toBe(0);
+});
 
-  it('should be correct', () => {
-    expect(distance.probabilisticSymmetric(v1, v2)).toBe(12.18901098901099);
-    expect(distance.probabilisticSymmetric(v1, v2)).toBe(
-      2 * distance.squared(v1, v2),
-    );
-  });
+test('should be correct', () => {
+  expect(distance.probabilisticSymmetric(v1, v2)).toBe(12.18901098901099);
+  expect(distance.probabilisticSymmetric(v1, v2)).toBe(
+    2 * distance.squared(v1, v2),
+  );
 });

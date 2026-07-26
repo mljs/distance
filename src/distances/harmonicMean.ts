@@ -1,4 +1,4 @@
-import { NumberArray } from 'cheminfo-types';
+import type { NumberArray } from 'cheminfo-types';
 /**
  *Returns the Harmonic mean similarity between vectors a and b
  * @link [Harmonic Mean Similarity algorithm](https://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)

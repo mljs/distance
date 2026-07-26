@@ -1,2 +1,2 @@
-export * as distance from './distances';
-export * as similarity from './similarities';
+export * as distance from './distances.ts';
+export * as similarity from './similarities.ts';

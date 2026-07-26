@@ -1,6 +1,6 @@
-import { NumberArray } from 'cheminfo-types';
+import type { NumberArray } from 'cheminfo-types';
 
-import { dice as diceD } from '../distances/dice';
+import { dice as diceD } from '../distances/dice.ts';
 /**
  *Returns the Dice similarity between vectors a and b
  * @link [Dice similarity algorithm](https://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)

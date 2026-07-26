@@ -1,10 +1,9 @@
+.claude
 .idea
 node_modules
 lib
 coverage
 
 .DS_Store
-
-lib-esm
 
 docs

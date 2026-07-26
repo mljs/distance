@@ -1,4 +1,4 @@
-import { NumberArray } from 'cheminfo-types';
+import type { NumberArray } from 'cheminfo-types';
 
 /**
  * Returns the Soergel distance between vectors a and b
