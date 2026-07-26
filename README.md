@@ -129,7 +129,7 @@ Note: distance between 2 identical vectors is 0.5 !
 
 - `ruzicka(p, q)`
 
-Returns the [Ruzicka similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+Returns the [Ruzicka similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q. The matching distance is `soergel`.
 
 $s(p,q)=\frac{\sum\limits_{i=1}^{n}{min(p_i,q_i)}}{\sum\limits_{i=1}^{n}{max(p_i,q_i)}}$
 
