@@ -1,8 +1,8 @@
 import type { NumberArray } from 'cheminfo-types';
 
 /**
- *Returns the Bhattacharyy distance between vectors a and b
- * @link [Bhattacharyy algorithm](https://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)
+ *Returns the Bhattacharyya distance between vectors a and b
+ * @link [Bhattacharyya algorithm](https://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)
  * @param a - first vector
  * @param b - second vector
  */

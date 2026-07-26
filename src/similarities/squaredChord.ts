@@ -2,7 +2,7 @@ import type { NumberArray } from 'cheminfo-types';
 
 import { squaredChord as squaredChordD } from '../distances/squaredChord.ts';
 /**
- *Returns the Squared-chord distance between vectors a and b
+ *Returns the Squared-chord similarity between vectors a and b
  * @link [Squared-chord algorithm](https://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)
  * @param a - first vector
  * @param b - second vector

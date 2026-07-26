@@ -3,6 +3,12 @@ import mean from 'ml-array-mean';
 
 import { cosine } from './cosine.ts';
 
+/**
+ * Returns the Pearson correlation between vectors a and b, i.e. the cosine
+ * similarity of the mean-centred vectors
+ * @param a - first vector
+ * @param b - second vector
+ */
 export function pearson(a: NumberArray, b: NumberArray): number {
   const avgA = mean(a);
   const avgB = mean(b);
