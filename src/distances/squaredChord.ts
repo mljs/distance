@@ -8,7 +8,8 @@ import type { NumberArray } from 'cheminfo-types';
 export function squaredChord(a: NumberArray, b: NumberArray): number {
   let ans = 0;
   for (let i = 0; i < a.length; i++) {
-    ans += (Math.sqrt(a[i]) - Math.sqrt(b[i])) ** 2;
+    const diff = Math.sqrt(a[i]) - Math.sqrt(b[i]);
+    ans += diff * diff;
   }
   return ans;
 }

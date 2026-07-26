@@ -49,7 +49,6 @@
   "homepage": "https://github.com/mljs/distance",
   "dependencies": {
     "cheminfo-types": "^1.15.0",
-    "ml-array-mean": "^2.0.0",
     "ml-distance-euclidean": "^3.0.1",
     "ml-tree-similarity": "^1.0.0"
   },

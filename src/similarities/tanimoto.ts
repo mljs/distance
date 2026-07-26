@@ -27,9 +27,11 @@ export function tanimoto(
     let q = 0;
     let m = 0;
     for (let i = 0; i < a.length; i++) {
-      p += a[i];
-      q += b[i];
-      m += Math.min(a[i], b[i]);
+      const ai = a[i];
+      const bi = b[i];
+      p += ai;
+      q += bi;
+      m += Math.min(ai, bi);
     }
     return 1 - (p + q - 2 * m) / (p + q - m);
   }

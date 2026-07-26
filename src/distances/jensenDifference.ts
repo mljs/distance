@@ -8,9 +8,10 @@ import type { NumberArray } from 'cheminfo-types';
 export function jensenDifference(a: NumberArray, b: NumberArray): number {
   let ans = 0;
   for (let i = 0; i < a.length; i++) {
-    ans +=
-      (a[i] * Math.log(a[i]) + b[i] * Math.log(b[i])) / 2 -
-      ((a[i] + b[i]) / 2) * Math.log((a[i] + b[i]) / 2);
+    const ai = a[i];
+    const bi = b[i];
+    const half = (ai + bi) / 2;
+    ans += (ai * Math.log(ai) + bi * Math.log(bi)) / 2 - half * Math.log(half);
   }
   return ans;
 }

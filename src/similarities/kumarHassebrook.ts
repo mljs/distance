@@ -10,9 +10,11 @@ export function kumarHassebrook(a: NumberArray, b: NumberArray): number {
   let p2 = 0;
   let q2 = 0;
   for (let i = 0; i < a.length; i++) {
-    p += a[i] * b[i];
-    p2 += a[i] * a[i];
-    q2 += b[i] * b[i];
+    const ai = a[i];
+    const bi = b[i];
+    p += ai * bi;
+    p2 += ai * ai;
+    q2 += bi * bi;
   }
   return p / (p2 + q2 - p);
 }

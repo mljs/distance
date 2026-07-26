@@ -8,7 +8,9 @@ import type { NumberArray } from 'cheminfo-types';
 export function neyman(a: NumberArray, b: NumberArray): number {
   let d = 0;
   for (let i = 0; i < a.length; i++) {
-    d += ((a[i] - b[i]) * (a[i] - b[i])) / a[i];
+    const ai = a[i];
+    const diff = ai - b[i];
+    d += (diff * diff) / ai;
   }
   return d;
 }

@@ -8,7 +8,8 @@ import type { NumberArray } from 'cheminfo-types';
 export function kullbackLeibler(a: NumberArray, b: NumberArray): number {
   let ans = 0;
   for (let i = 0; i < a.length; i++) {
-    ans += a[i] * Math.log(a[i] / b[i]);
+    const ai = a[i];
+    ans += ai * Math.log(ai / b[i]);
   }
   return ans;
 }
