@@ -1,22 +1,22 @@
-export * from './similarities/cosine';
+export * from './similarities/cosine.ts';
 
-export * from './similarities/czekanowski';
+export * from './similarities/czekanowski.ts';
 
-export * from './similarities/dice';
+export * from './similarities/dice.ts';
 
-export * from './similarities/intersection';
+export * from './similarities/intersection.ts';
 
-export * from './similarities/kulczynski';
+export * from './similarities/kulczynski.ts';
 
-export * from './similarities/motyka';
+export * from './similarities/motyka.ts';
 
-export * from './similarities/pearson';
+export * from './similarities/pearson.ts';
 
-export * from './similarities/squaredChord';
+export * from './similarities/squaredChord.ts';
 
-export * from './similarities/tanimoto';
+export * from './similarities/tanimoto.ts';
 
-export * from './similarities/kumarHassebrook';
+export * from './similarities/kumarHassebrook.ts';
 
 // @ts-expect-error ml-tree-similarity is not typed
 export * as tree from 'ml-tree-similarity';

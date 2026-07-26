@@ -1,4 +1,4 @@
-import { NumberArray } from 'cheminfo-types';
+import type { NumberArray } from 'cheminfo-types';
 /**
  * Returns the Minkowski distance between vectors a and b for order p
  * @link [Minkowski algorithm](https://en.wikipedia.org/wiki/Minkowski_distance)

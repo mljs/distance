@@ -1,7 +1,7 @@
-import { NumberArray } from 'cheminfo-types';
+import type { NumberArray } from 'cheminfo-types';
 import mean from 'ml-array-mean';
 
-import { cosine } from './cosine';
+import { cosine } from './cosine.ts';
 
 export function pearson(a: NumberArray, b: NumberArray): number {
   const avgA = mean(a);

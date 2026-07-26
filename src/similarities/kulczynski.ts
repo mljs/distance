@@ -1,6 +1,6 @@
-import { NumberArray } from 'cheminfo-types';
+import type { NumberArray } from 'cheminfo-types';
 
-import { kulczynski as kulczynskiD } from '../distances/kulczynski';
+import { kulczynski as kulczynskiD } from '../distances/kulczynski.ts';
 /**
  *Returns the Kulczynski similarity between vectors a and b
  * @link [Kulczinski algorithm](https://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)

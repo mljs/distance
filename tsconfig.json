@@ -1,13 +1,10 @@
 {
+  "extends": "@zakodium/tsconfig",
   "compilerOptions": {
-    "allowJs": true,
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    "skipLibCheck": true,
+    // the numeric loops index with a counter bounded by `length`
+    "noUncheckedIndexedAccess": false,
     "outDir": "lib",
-    "sourceMap": true,
-    "strict": true,
-    "target": "es2020"
+    "types": ["node"]
   },
-  "include": ["./src/**/*"]
+  "include": ["src", "vite*.ts"]
 }

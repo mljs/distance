@@ -1,4 +1,4 @@
-import { NumberArray } from 'cheminfo-types';
+import type { NumberArray } from 'cheminfo-types';
 /**
  * Returns the Canberra distance between vectors a and b
  * @link [Canberra algorithm](https://en.wikipedia.org/wiki/Canberra_distance)

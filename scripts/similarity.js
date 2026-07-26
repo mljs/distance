@@ -1,4 +1,4 @@
-import { distance } from '../src';
+import { distance } from '../src/index.ts';
 
 let results = [];
 
@@ -16,9 +16,7 @@ let v11 = [-0.6, 0.7];
 
 for (let algorithm in distance) {
   if (algorithm.match(/fidelity|harmonicMean|innerProduct|ruzicka/)) continue;
-  if (algorithm.match(/minkowski/)) {
-    if (algorithm.match(/motyka/)) continue;
-  } // does not give a 0 with identical vector
+  if (algorithm.match(/minkowski/) && algorithm.match(/motyka/)) continue; // does not give a 0 with identical vector
   let result = { algorithm };
   let callback = distance[algorithm];
   result.self = callback(v1, v1);

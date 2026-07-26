@@ -1,4 +1,4 @@
-import { NumberArray } from 'cheminfo-types';
+import type { NumberArray } from 'cheminfo-types';
 /**
  *Returns the Lorentzian distance between vectors a and b
  * @link [Lorentzian algorithm](https://stat.ethz.ch/education/semesters/ss2012/ams/slides/v4.2.pdf)

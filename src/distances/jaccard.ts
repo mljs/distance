@@ -1,6 +1,6 @@
-import { NumberArray } from 'cheminfo-types';
+import type { NumberArray } from 'cheminfo-types';
 
-import { kumarHassebrook } from '../similarities/kumarHassebrook';
+import { kumarHassebrook } from '../similarities/kumarHassebrook.ts';
 /**
  *Returns Jaccard distance between vectors a and b
  * @link [Jaccard algorithm](https://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)

@@ -1,4 +1,4 @@
-import { NumberArray } from 'cheminfo-types';
+import type { NumberArray } from 'cheminfo-types';
 
 /**
  * Returns the average of city block and Chebyshev distances between vectors a and b

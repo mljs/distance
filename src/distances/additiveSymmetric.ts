@@ -1,4 +1,4 @@
-import { NumberArray } from 'cheminfo-types';
+import type { NumberArray } from 'cheminfo-types';
 /**
  *Returns the Additive Symmetric distance between vectors a and b
  * @link [Additive Symmetric algorithm](https://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)

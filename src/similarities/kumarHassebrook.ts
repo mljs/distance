@@ -1,4 +1,4 @@
-import { NumberArray } from 'cheminfo-types';
+import type { NumberArray } from 'cheminfo-types';
 /**
  *Returns Kumar-Hassebrook similarity between vectors a and b
  * @link [Kumar-Hassebrook Similarity algorithm](https://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)

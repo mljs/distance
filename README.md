@@ -1,20 +1,20 @@
 # ml-distance
 
 <h3 align="center">
-  
+
   <a href="https://www.zakodium.com">
    <img src="https://www.zakodium.com/brand/zakodium-logo-white.svg" width="50" alt="Zakodium logo" />
   </a>
-  
+
   <p>
     Maintained by <a href="https://www.zakodium.com">Zakodium</a>
   </p>
-  
+
 [![NPM version][npm-image]][npm-url]
 [![Node.js CI](https://github.com/mljs/distance/actions/workflows/nodejs.yml/badge.svg)](https://github.com/mljs/distance/actions/workflows/nodejs.yml)
 [![Test coverage][codecov-image]][codecov-url]
 [![npm download][download-image]][download-url]
-  
+
 </h3>
 
 Distance functions to compare vectors.
@@ -22,6 +22,22 @@ Distance functions to compare vectors.
 ## Installation
 
 `$ npm i ml-distance`
+
+This package is ESM-only. CommonJS consumers need Node.js >= 20.19, >= 22.12, or
+any 24.x or later to `require()` it, or should migrate to `import`.
+
+## Usage
+
+```js
+import { distance, similarity } from 'ml-distance';
+
+const p = [0, 1, 2, 3, 4];
+const q = [4, 3, 2, 1, 0];
+
+distance.euclidean(p, q); // 6.324555320336759
+distance.manhattan(p, q); // 12
+similarity.cosine(p, q); // 0.3333333333333333
+```
 
 ## Methods
 
@@ -65,13 +81,13 @@ $d(p,q)=\frac{\sum\limits_{i=1}^{n}{\left|p_i-q_i\right|}}{n}$
 
 Returns the [Soergel distance](http://www.orgchm.bas.bg/~vmonev/SimSearch.pdf) between vectors p and q
 
-$d(p,q)=\frac{\sum\limits_{i=1}^{n}{\left|p_i-q_i\right|}}{max(p_i,q_i)}$
+$d(p,q)=\frac{\sum\limits_{i=1}^{n}{\left|p_i-q_i\right|}}{\sum\limits_{i=1}^{n}{max(p_i,q_i)}}$
 
 - `kulczynski(p, q)`
 
 Returns the [Kulczynski distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
-$d(p,q)=\frac{\sum\limits_{i=1}^{n}{\left|p_i-q_i\right|}}{min(p_i,q_i)}$
+$d(p,q)=\frac{\sum\limits_{i=1}^{n}{\left|p_i-q_i\right|}}{\sum\limits_{i=1}^{n}{min(p_i,q_i)}}$
 
 - `canberra(p, q)`
 
@@ -115,7 +131,7 @@ Note: distance between 2 identical vectors is 0.5 !
 
 Returns the [Ruzicka similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
-$d(p,q)=\frac{\sum\limits_{i=1}^{n}{max(p_i,q_i)}}{\sum\limits_{i=1}^{n}{min(p_i,q_i)}}$
+$s(p,q)=\frac{\sum\limits_{i=1}^{n}{min(p_i,q_i)}}{\sum\limits_{i=1}^{n}{max(p_i,q_i)}}$
 
 - `tanimoto(p, q, [bitVector])`
 
@@ -133,18 +149,6 @@ Returns the [Harmonic mean similarity](http://www.naun.org/main/NAUN/ijmmas/mmma
 
 $d(p,q)=2\sum\limits_{i=1}^{n}\frac{p_i\cdot{q_i}}{p_i+q_i}$
 
-- `cosine(p, q)`
-
-Returns the [Cosine similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
-
-$d(p,q)=\frac{\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}}{\sqrt{\sum\limits_{i=1}^{n}{p_i^2}}\sqrt{\sum\limits_{i=1}^{n}{q_i^2}}}$
-
-- `kumarHassebrook(p, q)`
-
-Returns the [Kumar-Hassebrook similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
-
-$d(p,q)=\frac{\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}}{\sum\limits_{i=1}^{n}{p_i^2}+\sum\limits_{i=1}^{n}{q_i^2}-\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}}$
-
 - `jaccard(p, q)`
 
 Returns the [Jaccard distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
@@ -155,7 +159,7 @@ $d(p,q)=1-\frac{\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}}{\sum\limits_{i=1}^{n}{p_i^
 
 Returns the [Dice distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
-$d(p,q)=1-\frac{\sum\limits_{i=1}^{n}{(p_i-q_i)^2}}{\sum\limits_{i=1}^{n}{p_i^2}+\sum\limits_{i=1}^{n}{q_i^2}}$
+$d(p,q)=\frac{\sum\limits_{i=1}^{n}{(p_i-q_i)^2}}{\sum\limits_{i=1}^{n}{p_i^2}+\sum\limits_{i=1}^{n}{q_i^2}}$
 
 - `fidelity(p, q)`
 
@@ -311,9 +315,21 @@ Returns the [Kulczynski similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-4
 
 Returns the [Squared-chord similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
 
-- `jaccard(p, q)`
+- `cosine(p, q)`
 
-Returns the [Jaccard similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+Returns the [Cosine similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
+$s(p,q)=\frac{\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}}{\sqrt{\sum\limits_{i=1}^{n}{p_i^2}}\sqrt{\sum\limits_{i=1}^{n}{q_i^2}}}$
+
+- `kumarHassebrook(p, q)`
+
+Returns the [Kumar-Hassebrook similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q
+
+$s(p,q)=\frac{\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}}{\sum\limits_{i=1}^{n}{p_i^2}+\sum\limits_{i=1}^{n}{q_i^2}-\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}}$
+
+- `pearson(p, q)`
+
+Returns the [Pearson correlation](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient) between vectors p and q, i.e. the cosine similarity of the mean-centred vectors
 
 - `dice(p, q)`
 
@@ -329,8 +345,8 @@ Refer to [ml-tree-similarity](https://github.com/mljs/tree-similarity)
 
 ## Contributing
 
-A new metric should normally be in its own file in the src/dist directory. There should be a corresponding test file in test/dist.  
-The metric should be then added in the exports of src/index.js with a relatively small but understandable name (use camelCase).  
+A new metric should normally be in its own file in the `src/distances` (or `src/similarities`) directory. There should be a corresponding test file in the neighbouring `__tests__` directory.  
+The metric should be then added in the exports of `src/distances.ts` (or `src/similarities.ts`) with a relatively small but understandable name (use camelCase).  
 It should also be added to this README with either a link to the formula or an inline description.
 
 ## Authors
