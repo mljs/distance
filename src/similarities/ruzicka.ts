@@ -1,7 +1,10 @@
 import type { NumberArray } from 'cheminfo-types';
 /**
- *Returns the Ruzicka similarity between vectors a and b
+ *Returns the Ruzicka similarity between vectors a and b, also known as the
+ * weighted Jaccard similarity. It is 1 for identical vectors; the matching
+ * distance is `soergel`.
  * @link [Ruzicka algorithm](https://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf)
+ * @link [Weighted Jaccard similarity](https://en.wikipedia.org/wiki/Jaccard_index#Weighted_Jaccard_similarity_and_distance)
  * @param a - first vector
  * @param b - second vector
  */
