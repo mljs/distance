@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.1.0](https://github.com/mljs/distance/compare/v4.0.1...v4.1.0) (2026-07-30)
+
+
+### Features
+
+* update to our current standards and convert to type module ([#20](https://github.com/mljs/distance/issues/20)) ([4a024c3](https://github.com/mljs/distance/commit/4a024c31303765bf42fbbe37a3225c972ac09bea))
+
+
+### Performance Improvements
+
+* avoid slow exponentiation and repeated element reads ([#23](https://github.com/mljs/distance/issues/23)) ([a020077](https://github.com/mljs/distance/commit/a0200779f832349a15ae41c909446188533ed0fc))
+
 ## [4.0.1](https://github.com/mljs/distance/compare/v4.0.0...v4.0.1) (2023-06-01)
 
 
