@@ -1,7 +1,4 @@
 import type { NumberArray } from 'cheminfo-types';
-import mean from 'ml-array-mean';
-
-import { cosine } from './cosine.ts';
 
 /**
  * Returns the Pearson correlation between vectors a and b, i.e. the cosine
@@ -10,15 +7,25 @@ import { cosine } from './cosine.ts';
  * @param b - second vector
  */
 export function pearson(a: NumberArray, b: NumberArray): number {
-  const avgA = mean(a);
-  const avgB = mean(b);
-
-  const newA = new Array(a.length);
-  const newB = new Array(b.length);
-  for (let i = 0; i < newA.length; i++) {
-    newA[i] = a[i] - avgA;
-    newB[i] = b[i] - avgB;
+  const length = a.length;
+  let sumA = 0;
+  let sumB = 0;
+  for (let i = 0; i < length; i++) {
+    sumA += a[i];
+    sumB += b[i];
   }
+  const avgA = sumA / length;
+  const avgB = sumB / length;
 
-  return cosine(newA, newB);
+  let p = 0;
+  let p2 = 0;
+  let q2 = 0;
+  for (let i = 0; i < length; i++) {
+    const centredA = a[i] - avgA;
+    const centredB = b[i] - avgB;
+    p += centredA * centredB;
+    p2 += centredA * centredA;
+    q2 += centredB * centredB;
+  }
+  return p / (Math.sqrt(p2) * Math.sqrt(q2));
 }
