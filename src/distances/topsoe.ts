@@ -8,10 +8,9 @@ import type { NumberArray } from 'cheminfo-types';
 export function topsoe(a: NumberArray, b: NumberArray): number {
   let ans = 0;
   for (let i = 0; i < a.length; i++) {
-    const ai = a[i];
-    const bi = b[i];
-    const sum = ai + bi;
-    ans += ai * Math.log((2 * ai) / sum) + bi * Math.log((2 * bi) / sum);
+    ans +=
+      a[i] * Math.log((2 * a[i]) / (a[i] + b[i])) +
+      b[i] * Math.log((2 * b[i]) / (a[i] + b[i]));
   }
   return ans;
 }

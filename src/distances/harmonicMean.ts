@@ -8,9 +8,7 @@ import type { NumberArray } from 'cheminfo-types';
 export function harmonicMean(a: NumberArray, b: NumberArray): number {
   let ans = 0;
   for (let i = 0; i < a.length; i++) {
-    const ai = a[i];
-    const bi = b[i];
-    ans += (ai * bi) / (ai + bi);
+    ans += (a[i] * b[i]) / (a[i] + b[i]);
   }
   return 2 * ans;
 }

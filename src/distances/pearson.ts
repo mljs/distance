@@ -8,9 +8,7 @@ import type { NumberArray } from 'cheminfo-types';
 export function pearson(a: NumberArray, b: NumberArray): number {
   let d = 0;
   for (let i = 0; i < a.length; i++) {
-    const bi = b[i];
-    const diff = a[i] - bi;
-    d += (diff * diff) / bi;
+    d += ((a[i] - b[i]) * (a[i] - b[i])) / b[i];
   }
   return d;
 }
