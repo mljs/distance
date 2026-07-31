@@ -62,8 +62,6 @@ export * from './distances/pearson.ts';
 
 export * from './distances/probabilisticSymmetric.ts';
 
-export * from './distances/ruzicka.ts';
-
 export * from './distances/soergel.ts';
 
 export * from './distances/sorensen.ts';

@@ -12,6 +12,8 @@ export * from './similarities/motyka.ts';
 
 export * from './similarities/pearson.ts';
 
+export * from './similarities/ruzicka.ts';
+
 export * from './similarities/squaredChord.ts';
 
 export * from './similarities/tanimoto.ts';

@@ -127,12 +127,6 @@ $d(p,q)=1-\frac{\sum\limits_{i=1}^{n}{min(p_i,q_i)}}{\sum\limits_{i=1}^{n}{p_i+q
 
 Note: distance between 2 identical vectors is 0.5 !
 
-- `ruzicka(p, q)`
-
-Returns the [Ruzicka similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q. The matching distance is `soergel`.
-
-$s(p,q)=\frac{\sum\limits_{i=1}^{n}{min(p_i,q_i)}}{\sum\limits_{i=1}^{n}{max(p_i,q_i)}}$
-
 - `tanimoto(p, q, [bitVector])`
 
 Returns the [Tanimoto distance](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf) between vectors p and q, and accepts the bitVector use, see the test case for an example
@@ -330,6 +324,12 @@ $s(p,q)=\frac{\sum\limits_{i=1}^{n}{p_i\cdot{q_i}}}{\sum\limits_{i=1}^{n}{p_i^2}
 - `pearson(p, q)`
 
 Returns the [Pearson correlation](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient) between vectors p and q, i.e. the cosine similarity of the mean-centred vectors
+
+- `ruzicka(p, q)`
+
+Returns the [Ruzicka similarity](http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf), also known as the [weighted Jaccard similarity](https://en.wikipedia.org/wiki/Jaccard_index#Weighted_Jaccard_similarity_and_distance), between vectors p and q. The matching distance is `soergel`.
+
+$s(p,q)=\frac{\sum\limits_{i=1}^{n}{min(p_i,q_i)}}{\sum\limits_{i=1}^{n}{max(p_i,q_i)}}$
 
 - `dice(p, q)`
 

@@ -15,7 +15,7 @@ let v10 = [-0.4, 0.4];
 let v11 = [-0.6, 0.7];
 
 for (let algorithm in distance) {
-  if (algorithm.match(/fidelity|harmonicMean|innerProduct|ruzicka/)) continue;
+  if (algorithm.match(/fidelity|harmonicMean|innerProduct/)) continue;
   if (algorithm.match(/minkowski/) && algorithm.match(/motyka/)) continue; // does not give a 0 with identical vector
   let result = { algorithm };
   let callback = distance[algorithm];
