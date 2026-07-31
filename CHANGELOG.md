@@ -1,5 +1,16 @@
 # Changelog
 
+## [5.0.0](https://github.com/mljs/distance/compare/v4.1.0...v5.0.0) (2026-07-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* `distance.ruzicka` no longer exists, use `similarity.ruzicka` instead.
+
+### Features
+
+* move ruzicka from distances to similarities ([#24](https://github.com/mljs/distance/issues/24)) ([a2672c5](https://github.com/mljs/distance/commit/a2672c5c6ab8b7dfde73f18aed420d4c6a67db47))
+
 ## [4.1.0](https://github.com/mljs/distance/compare/v4.0.1...v4.1.0) (2026-07-30)
 
 

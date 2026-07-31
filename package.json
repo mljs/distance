@@ -1,6 +1,6 @@
 {
   "name": "ml-distance",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "description": "Distance and similarity functions to compare vectors",
   "type": "module",
   "exports": {
