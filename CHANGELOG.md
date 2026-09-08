@@ -1,5 +1,21 @@
 # Changelog
 
+## [5.0.0](https://github.com/mljs/distance/compare/v4.1.0...v5.0.0) (2026-09-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* `distance.ruzicka` no longer exists, use `similarity.ruzicka` instead.
+
+### Features
+
+* move ruzicka from distances to similarities ([#24](https://github.com/mljs/distance/issues/24)) ([a2672c5](https://github.com/mljs/distance/commit/a2672c5c6ab8b7dfde73f18aed420d4c6a67db47))
+
+
+### Bug Fixes
+
+* ensure that cosine and pearson similarity is 1 for identical vector ([d4df132](https://github.com/mljs/distance/commit/d4df13212956ed6aa9a8f0b41369bbb6c5c2dc47))
+
 ## [4.1.0](https://github.com/mljs/distance/compare/v4.0.1...v4.1.0) (2026-07-30)
 
 
