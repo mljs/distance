@@ -27,5 +27,5 @@ export function pearson(a: NumberArray, b: NumberArray): number {
     p2 += centredA * centredA;
     q2 += centredB * centredB;
   }
-  return p / (Math.sqrt(p2) * Math.sqrt(q2));
+  return p / Math.sqrt(p2 * q2);
 }

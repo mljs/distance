@@ -13,5 +13,5 @@ export function cosine(a: NumberArray, b: NumberArray): number {
     p2 += a[i] * a[i];
     q2 += b[i] * b[i];
   }
-  return p / (Math.sqrt(p2) * Math.sqrt(q2));
+  return p / Math.sqrt(p2 * q2);
 }
