@@ -93,11 +93,6 @@ any 24.x or later to <code>require()</code> it, or should migrate to <code>impor
 <p>$d(p,q)=1-\frac{\sum\limits_{i=1}^{n}{min(p_i,q_i)}}{\sum\limits_{i=1}^{n}{p_i+q_i}}$</p>
 <p>Note: distance between 2 identical vectors is 0.5 !</p>
 <ul>
-<li><code>ruzicka(p, q)</code></li>
-</ul>
-<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Ruzicka similarity</a> between vectors p and q. The matching distance is <code>soergel</code>.</p>
-<p>$s(p,q)=\frac{\sum\limits_{i=1}^{n}{min(p_i,q_i)}}{\sum\limits_{i=1}^{n}{max(p_i,q_i)}}$</p>
-<ul>
 <li><code>tanimoto(p, q, [bitVector])</code></li>
 </ul>
 <p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Tanimoto distance</a> between vectors p and q, and accepts the bitVector use, see the test case for an example</p>
@@ -266,6 +261,11 @@ any 24.x or later to <code>require()</code> it, or should migrate to <code>impor
 <li><code>pearson(p, q)</code></li>
 </ul>
 <p>Returns the <a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson correlation</a> between vectors p and q, i.e. the cosine similarity of the mean-centred vectors</p>
+<ul>
+<li><code>ruzicka(p, q)</code></li>
+</ul>
+<p>Returns the <a href="http://www.naun.org/main/NAUN/ijmmas/mmmas-49.pdf">Ruzicka similarity</a>, also known as the <a href="https://en.wikipedia.org/wiki/Jaccard_index#Weighted_Jaccard_similarity_and_distance">weighted Jaccard similarity</a>, between vectors p and q. The matching distance is <code>soergel</code>.</p>
+<p>$s(p,q)=\frac{\sum\limits_{i=1}^{n}{min(p_i,q_i)}}{\sum\limits_{i=1}^{n}{max(p_i,q_i)}}$</p>
 <ul>
 <li><code>dice(p, q)</code></li>
 </ul>
